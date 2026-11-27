@@ -1,0 +1,1644 @@
+{
+  "id": "e28c56f1-590b-4f24-aa02-6b32c0ca198d",
+  "revision": 0,
+  "last_node_id": 24,
+  "last_link_id": 29,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "K2EditorialBuilder",
+      "pos": [
+        -94.29988813593016,
+        11.276372935873251
+      ],
+      "size": [
+        560,
+        104
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "提示词",
+          "type": "STRING",
+          "links": [
+            1
+          ]
+        },
+        {
+          "name": "自检报告",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "元数据",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "★ K2 长文出题 · 白垩光 / 平面海报",
+      "properties": {
+        "aux_id": "lingdongbudong/Comfyui-K2-Editorial",
+        "ver": "426a0d52558aad036c2d1b2e48564fef9cd1194f",
+        "Node name for S&R": "K2EditorialBuilder"
+      },
+      "widgets_values": [
+        7,
+        true,
+        "miku",
+        "k2p_arashi",
+        "16:9",
+        "自动（跟随母题）",
+        "",
+        "",
+        "",
+        false,
+        "全部替换",
+        "关闭",
+        "",
+        "关闭"
+      ],
+      "widgets_values_named": {
+        "随机种子": 7,
+        "每次重随机": true,
+        "角色": "miku",
+        "母题": "k2p_arashi",
+        "画幅": "16:9",
+        "服装": "自动（跟随母题）",
+        "单品": "",
+        "覆盖提示词": "",
+        "画面英文文字": "",
+        "画面不显示英文": false,
+        "画面文字模式": "全部替换",
+        "角色随机池": "关闭",
+        "角色随机作品": "",
+        "场景随机池": "关闭"
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 2,
+      "type": "StringConcatenate",
+      "pos": [
+        529.0870174593507,
+        21.231610048483542
+      ],
+      "size": [
+        480,
+        230
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            3
+          ]
+        }
+      ],
+      "title": "官方质量词 + K2 海报正文",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "masterpiece, best quality, ultra-detailed",
+        "",
+        ", "
+      ],
+      "widgets_values_named": {
+        "string_a": "masterpiece, best quality, ultra-detailed",
+        "string_b": "",
+        "delimiter": ", "
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 3,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        516.6685565454131,
+        472.8763787667124
+      ],
+      "size": [
+        480,
+        120
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "title": "六 LoRA 静态触发词",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "baka, wlop style"
+      ],
+      "widgets_values_named": {
+        "value": "baka, wlop style"
+      }
+    },
+    {
+      "id": 4,
+      "type": "StringConcatenate",
+      "pos": [
+        1066.9897076045115,
+        206.58432517227644
+      ],
+      "size": [
+        460,
+        230
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": 2
+        },
+        {
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            5
+          ]
+        }
+      ],
+      "title": "LoRA 触发词 + 完整海报提示词",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "StringConcatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        ", "
+      ],
+      "widgets_values_named": {
+        "string_a": "",
+        "string_b": "",
+        "delimiter": ", "
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 5,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1573.6026848698652,
+        126.42904433101738
+      ],
+      "size": [
+        420,
+        190
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 4
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 5
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            6,
+            11,
+            23
+          ]
+        }
+      ],
+      "title": "正向编码（K2 完整长文）",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "widgets_values_named": {
+        "text": ""
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 6,
+      "type": "ConditioningZeroOut",
+      "pos": [
+        1555.5395742325518,
+        454.9738057609177
+      ],
+      "size": [
+        420,
+        100
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "link": 6
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            12,
+            24
+          ]
+        }
+      ],
+      "title": "Turbo 负向置零",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "ConditioningZeroOut"
+      },
+      "color": "#223322",
+      "bgcolor": "#335533"
+    },
+    {
+      "id": 7,
+      "type": "UNETLoader",
+      "pos": [
+        -85.60279186777178,
+        738.3466330489784
+      ],
+      "size": [
+        320,
+        180
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            7
+          ]
+        }
+      ],
+      "title": "Krea2 Turbo FP8（本机现有）",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "UNETLoader"
+      },
+      "widgets_values": [
+        "krea2\\krea2_turbo_fp8_scaled.safetensors",
+        "default"
+      ],
+      "widgets_values_named": {
+        "unet_name": "krea2\\krea2_turbo_fp8_scaled.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    {
+      "id": 8,
+      "type": "CLIPLoader",
+      "pos": [
+        -88.15183063038195,
+        986.434811192121
+      ],
+      "size": [
+        320,
+        180
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            8
+          ]
+        }
+      ],
+      "title": "Krea2 / Qwen3-VL 文本编码器",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "CLIPLoader"
+      },
+      "widgets_values": [
+        "qwen3vl_4b_fp8_scaled.safetensors",
+        "krea2",
+        "default"
+      ],
+      "widgets_values_named": {
+        "clip_name": "qwen3vl_4b_fp8_scaled.safetensors",
+        "type": "krea2",
+        "device": "default"
+      }
+    },
+    {
+      "id": 9,
+      "type": "VAELoader",
+      "pos": [
+        -86.87728985662694,
+        1236.434853977021
+      ],
+      "size": [
+        320,
+        100
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            16,
+            21,
+            28
+          ]
+        }
+      ],
+      "title": "Qwen Image VAE",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "qwen_image_vae.safetensors"
+      ],
+      "widgets_values_named": {
+        "vae_name": "qwen_image_vae.safetensors"
+      }
+    },
+    {
+      "id": 10,
+      "type": "easy loraStack",
+      "pos": [
+        299.5279282284022,
+        747.1064570184433
+      ],
+      "size": [
+        520,
+        538
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "optional_lora_stack",
+          "shape": 7,
+          "type": "LORA_STACK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "lora_stack",
+          "type": "LORA_STACK",
+          "links": [
+            9
+          ]
+        }
+      ],
+      "title": "唯一 LoRA 配方 · 标准档 6 LoRA 双强度",
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "f141539dfea4e69ac742967d5380cf97d60c007d",
+        "Node name for S&R": "easy loraStack"
+      },
+      "widgets_values": [
+        true,
+        "advanced",
+        6,
+        "krea2\\wlop_c1-st4000.safetensors",
+        0.4,
+        0.4,
+        0.4,
+        "krea2\\light_c1-st2000.safetensors",
+        0.4,
+        0.4,
+        1,
+        "krea2\\Krea2Rella_c1-st8000.safetensors",
+        0.4,
+        0.4,
+        1,
+        "krea2\\KREA_MIDJ_1.safetensors",
+        0.5,
+        0.5,
+        1,
+        "krea2\\z3zz4-k2-4_c1-st5000.safetensors",
+        0.55,
+        0.55,
+        0.55,
+        "krea2\\si_(wooupp)_000001000.safetensors",
+        0.6,
+        0.6,
+        0.6,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1,
+        "None",
+        1,
+        1,
+        1
+      ],
+      "widgets_values_named": {
+        "toggle": true,
+        "mode": "advanced",
+        "num_loras": 6,
+        "lora_1_name": "krea2\\wlop_c1-st4000.safetensors",
+        "lora_1_strength": 0.4,
+        "lora_1_model_strength": 0.4,
+        "lora_1_clip_strength": 0.4,
+        "lora_2_name": "krea2\\light_c1-st2000.safetensors",
+        "lora_2_strength": 0.4,
+        "lora_2_model_strength": 0.4,
+        "lora_2_clip_strength": 1,
+        "lora_3_name": "krea2\\Krea2Rella_c1-st8000.safetensors",
+        "lora_3_strength": 0.4,
+        "lora_3_model_strength": 0.4,
+        "lora_3_clip_strength": 1,
+        "lora_4_name": "krea2\\KREA_MIDJ_1.safetensors",
+        "lora_4_strength": 0.5,
+        "lora_4_model_strength": 0.5,
+        "lora_4_clip_strength": 1,
+        "lora_5_name": "krea2\\z3zz4-k2-4_c1-st5000.safetensors",
+        "lora_5_strength": 0.55,
+        "lora_5_model_strength": 0.55,
+        "lora_5_clip_strength": 0.55,
+        "lora_6_name": "krea2\\si_(wooupp)_000001000.safetensors",
+        "lora_6_strength": 0.6,
+        "lora_6_model_strength": 0.6,
+        "lora_6_clip_strength": 0.6,
+        "lora_7_name": "None",
+        "lora_7_strength": 1,
+        "lora_7_model_strength": 1,
+        "lora_7_clip_strength": 1,
+        "lora_8_name": "None",
+        "lora_8_strength": 1,
+        "lora_8_model_strength": 1,
+        "lora_8_clip_strength": 1,
+        "lora_9_name": "None",
+        "lora_9_strength": 1,
+        "lora_9_model_strength": 1,
+        "lora_9_clip_strength": 1,
+        "lora_10_name": "None",
+        "lora_10_strength": 1,
+        "lora_10_model_strength": 1,
+        "lora_10_clip_strength": 1
+      },
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 11,
+      "type": "easy loraStackApply",
+      "pos": [
+        878.858047359246,
+        727.5131755229854
+      ],
+      "size": [
+        360,
+        150
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "lora_stack",
+          "type": "LORA_STACK",
+          "link": 9
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 7
+        },
+        {
+          "name": "optional_clip",
+          "shape": 7,
+          "type": "CLIP",
+          "link": 8
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            10,
+            22
+          ]
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": [
+            4
+          ]
+        }
+      ],
+      "title": "应用六 LoRA → MODEL / CLIP",
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "f141539dfea4e69ac742967d5380cf97d60c007d",
+        "Node name for S&R": "easy loraStackApply"
+      },
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 12,
+      "type": "CR Aspect Ratio",
+      "pos": [
+        1465.5522622352782,
+        750.7813811499219
+      ],
+      "size": [
+        360,
+        322
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "upscale_factor",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "name": "prescale_factor",
+          "type": "FLOAT",
+          "links": null
+        },
+        {
+          "name": "batch_size",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "empty_latent",
+          "type": "LATENT",
+          "links": [
+            13
+          ]
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "画幅总控（与 K2 画幅保持同步）",
+      "properties": {
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+        "Node name for S&R": "CR Aspect Ratio"
+      },
+      "widgets_values": [
+        1920,
+        1088,
+        "custom",
+        "Off",
+        1,
+        1,
+        1
+      ],
+      "widgets_values_named": {
+        "width": 1920,
+        "height": 1088,
+        "aspect_ratio": "custom",
+        "swap_dimensions": "Off",
+        "upscale_factor": 1,
+        "prescale_factor": 1,
+        "batch_size": 1
+      }
+    },
+    {
+      "id": 13,
+      "type": "PrimitiveInt",
+      "pos": [
+        1407.4960434911482,
+        1379.9132860557738
+      ],
+      "size": [
+        360,
+        90
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            14,
+            26
+          ]
+        }
+      ],
+      "title": "主图与放大共享随机种子",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "PrimitiveInt"
+      },
+      "widgets_values": [
+        7,
+        "randomize"
+      ],
+      "widgets_values_named": {
+        "value": 7,
+        "control_after_generate": "randomize"
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 14,
+      "type": "KSampler",
+      "pos": [
+        2150.76321651322,
+        19.44723399241027
+      ],
+      "size": [
+        331.8039158248611,
+        535.3588390278685
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 10
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 11
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 12
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 13
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": 14
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            15
+          ]
+        }
+      ],
+      "title": "Krea Turbo · 8 步 / CFG 1 / 主采样",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        7,
+        "randomize",
+        8,
+        1,
+        "euler",
+        "simple",
+        1
+      ],
+      "widgets_values_named": {
+        "seed": 7,
+        "control_after_generate": "randomize",
+        "steps": 8,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 15,
+      "type": "VAEDecodeTiled",
+      "pos": [
+        2718.459096631996,
+        74.53588610390453
+      ],
+      "size": [
+        340,
+        220
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 15
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 16
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            17,
+            18
+          ]
+        }
+      ],
+      "title": "主图分块解码 · 320 / 32",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "VAEDecodeTiled"
+      },
+      "widgets_values": [
+        320,
+        32,
+        64,
+        8
+      ],
+      "widgets_values_named": {
+        "tile_size": 320,
+        "overlap": 32,
+        "temporal_size": 64,
+        "temporal_overlap": 8
+      }
+    },
+    {
+      "id": 16,
+      "type": "SaveImage",
+      "pos": [
+        3118.459096631996,
+        74.53588610390453
+      ],
+      "size": [
+        420,
+        110
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 17
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "保存主图（始终执行）",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "图片/Krea2/%year%-%month%-%day%/Krea2-平面本地化"
+      ],
+      "widgets_values_named": {
+        "filename_prefix": "图片/Krea2/%year%-%month%-%day%/Krea2-平面本地化"
+      }
+    },
+    {
+      "id": 17,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        2687.218405525098,
+        1252.4724631019321
+      ],
+      "size": [
+        520,
+        250
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "title": "放大组开关（默认关闭）",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "",
+        "showNav": true,
+        "showAllGraphs": true,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 18,
+      "type": "UpscaleModelLoader",
+      "pos": [
+        2724.8660931777085,
+        668.5581528844925
+      ],
+      "size": [
+        340,
+        100
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "UPSCALE_MODEL",
+          "type": "UPSCALE_MODEL",
+          "links": [
+            19
+          ]
+        }
+      ],
+      "title": "放大模型 · 本机 4x-UltraSharp",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "UpscaleModelLoader"
+      },
+      "widgets_values": [
+        "4x-UltraSharp.pt"
+      ],
+      "widgets_values_named": {
+        "model_name": "4x-UltraSharp.pt"
+      }
+    },
+    {
+      "id": 19,
+      "type": "ImageUpscaleWithModelBatched",
+      "pos": [
+        3124.8660931777085,
+        598.5581528844925
+      ],
+      "size": [
+        400,
+        220
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "upscale_model",
+          "type": "UPSCALE_MODEL",
+          "link": 19
+        },
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 18
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            20
+          ]
+        }
+      ],
+      "title": "4x 模型放大后 ×0.5 = 净 2 倍",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "70701d2a11d4797cf52733290ed0b6b5037148d9",
+        "Node name for S&R": "ImageUpscaleWithModelBatched"
+      },
+      "widgets_values": [
+        1,
+        0.5,
+        "lanczos",
+        "float32"
+      ],
+      "widgets_values_named": {
+        "per_batch": 1,
+        "downscale_ratio": 0.5,
+        "downscale_method": "lanczos",
+        "precision": "float32"
+      }
+    },
+    {
+      "id": 20,
+      "type": "VAEEncodeTiled",
+      "pos": [
+        3584.8660931777085,
+        598.5581528844925
+      ],
+      "size": [
+        350,
+        220
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "pixels",
+          "type": "IMAGE",
+          "link": 20
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 21
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            25
+          ]
+        }
+      ],
+      "title": "放大图分块回编码 · 320 / 32",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "VAEEncodeTiled"
+      },
+      "widgets_values": [
+        320,
+        32,
+        64,
+        8
+      ],
+      "widgets_values_named": {
+        "tile_size": 320,
+        "overlap": 32,
+        "temporal_size": 64,
+        "temporal_overlap": 8
+      }
+    },
+    {
+      "id": 21,
+      "type": "KSampler",
+      "pos": [
+        3994.8660931777085,
+        498.558152884492
+      ],
+      "size": [
+        340,
+        590
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 22
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 23
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 24
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 25
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": 26
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            27
+          ]
+        }
+      ],
+      "title": "放大重采样 · denoise 0.35",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        7,
+        "randomize",
+        8,
+        1,
+        "euler",
+        "simple",
+        0.35
+      ],
+      "widgets_values_named": {
+        "seed": 7,
+        "control_after_generate": "randomize",
+        "steps": 8,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 0.35
+      },
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 22,
+      "type": "VAEDecodeTiled",
+      "pos": [
+        4394.866093177704,
+        498.558152884492
+      ],
+      "size": [
+        340,
+        220
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 27
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 28
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            29
+          ]
+        }
+      ],
+      "title": "放大结果分块解码 · 320 / 32",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "VAEDecodeTiled"
+      },
+      "widgets_values": [
+        320,
+        32,
+        64,
+        8
+      ],
+      "widgets_values_named": {
+        "tile_size": 320,
+        "overlap": 32,
+        "temporal_size": 64,
+        "temporal_overlap": 8
+      }
+    },
+    {
+      "id": 23,
+      "type": "SaveImage",
+      "pos": [
+        4794.866093177704,
+        498.558152884492
+      ],
+      "size": [
+        420,
+        110
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 29
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "保存 3840×2176 放大图",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "图片/Krea2/%year%-%month%-%day%/Krea2-平面本地化-放大"
+      ],
+      "widgets_values_named": {
+        "filename_prefix": "图片/Krea2/%year%-%month%-%day%/Krea2-平面本地化-放大"
+      }
+    },
+    {
+      "id": 24,
+      "type": "Label (rgthree)",
+      "pos": [
+        0,
+        -150
+      ],
+      "size": [
+        1239.46875,
+        64
+      ],
+      "flags": {
+        "allow_interaction": true
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "▶Krea2 平面设计档 · 本地化 / K2 + 6 LoRA",
+      "properties": {
+        "fontSize": 64,
+        "fontFamily": "Arial",
+        "fontColor": "#3CB371",
+        "textAlign": "left",
+        "backgroundColor": "transparent",
+        "padding": 0,
+        "borderRadius": 0,
+        "angle": 0,
+        "Node name for S&R": "Label (rgthree)"
+      },
+      "color": "#fff0",
+      "bgcolor": "#fff0"
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "STRING"
+    ],
+    [
+      2,
+      3,
+      0,
+      4,
+      0,
+      "STRING"
+    ],
+    [
+      3,
+      2,
+      0,
+      4,
+      1,
+      "STRING"
+    ],
+    [
+      4,
+      11,
+      1,
+      5,
+      0,
+      "CLIP"
+    ],
+    [
+      5,
+      4,
+      0,
+      5,
+      1,
+      "STRING"
+    ],
+    [
+      6,
+      5,
+      0,
+      6,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      7,
+      7,
+      0,
+      11,
+      1,
+      "MODEL"
+    ],
+    [
+      8,
+      8,
+      0,
+      11,
+      2,
+      "CLIP"
+    ],
+    [
+      9,
+      10,
+      0,
+      11,
+      0,
+      "LORA_STACK"
+    ],
+    [
+      10,
+      11,
+      0,
+      14,
+      0,
+      "MODEL"
+    ],
+    [
+      11,
+      5,
+      0,
+      14,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      12,
+      6,
+      0,
+      14,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      13,
+      12,
+      5,
+      14,
+      3,
+      "LATENT"
+    ],
+    [
+      14,
+      13,
+      0,
+      14,
+      4,
+      "INT"
+    ],
+    [
+      15,
+      14,
+      0,
+      15,
+      0,
+      "LATENT"
+    ],
+    [
+      16,
+      9,
+      0,
+      15,
+      1,
+      "VAE"
+    ],
+    [
+      17,
+      15,
+      0,
+      16,
+      0,
+      "IMAGE"
+    ],
+    [
+      18,
+      15,
+      0,
+      19,
+      1,
+      "IMAGE"
+    ],
+    [
+      19,
+      18,
+      0,
+      19,
+      0,
+      "UPSCALE_MODEL"
+    ],
+    [
+      20,
+      19,
+      0,
+      20,
+      0,
+      "IMAGE"
+    ],
+    [
+      21,
+      9,
+      0,
+      20,
+      1,
+      "VAE"
+    ],
+    [
+      22,
+      11,
+      0,
+      21,
+      0,
+      "MODEL"
+    ],
+    [
+      23,
+      5,
+      0,
+      21,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      24,
+      6,
+      0,
+      21,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      25,
+      20,
+      0,
+      21,
+      3,
+      "LATENT"
+    ],
+    [
+      26,
+      13,
+      0,
+      21,
+      4,
+      "INT"
+    ],
+    [
+      27,
+      21,
+      0,
+      22,
+      0,
+      "LATENT"
+    ],
+    [
+      28,
+      9,
+      0,
+      22,
+      1,
+      "VAE"
+    ],
+    [
+      29,
+      22,
+      0,
+      23,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "① K2 出题与文本拼接",
+      "bounding": [
+        -128.65512816373965,
+        -61.14205352530986,
+        2169.1210533961776,
+        677.3102563274792
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "② 模型与六 LoRA",
+      "bounding": [
+        -121.1419526407541,
+        667.5131755229854,
+        1400,
+        800
+      ],
+      "color": "#8A8A8A",
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "③ 画幅与共享种子",
+      "bounding": [
+        1404.515512009297,
+        667.7235299102526,
+        457.51327640754107,
+        567.6182770532025
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 4,
+      "title": "④ 主采样",
+      "bounding": [
+        2106.6579640956484,
+        -61.0789764163144,
+        435.04789444983953,
+        677.6291594683745
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 5,
+      "title": "⑤ 主图解码与保存（始终执行）",
+      "bounding": [
+        2678.459096631996,
+        14.535886103904485,
+        900,
+        340
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 6,
+      "title": "⑥ 可选放大（默认关闭）",
+      "bounding": [
+        2684.8660931777085,
+        428.5581528844915,
+        2590,
+        720
+      ],
+      "color": "#A1309C",
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.45454545454545536,
+      "offset": [
+        1234.193154804306,
+        691.7644041116195
+      ]
+    },
+    "frontendVersion": "1.57.1"
+  },
+  "version": 0.4,
+  "seed_widgets": {
+    "14": 0,
+    "21": 0
+  }
+}

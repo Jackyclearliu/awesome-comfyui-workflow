@@ -8,8 +8,8 @@
       "id": 10,
       "type": "VAELoader",
       "pos": [
-        -607.4683913844055,
-        -213.59225168095918
+        -1260.2663165407607,
+        -136.0398445089378
       ],
       "size": [
         400.91083089998074,
@@ -18,20 +18,9 @@
       "flags": {},
       "order": 0,
       "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "vae名称",
-          "name": "vae_name",
-          "type": "COMBO",
-          "widget": {
-            "name": "vae_name"
-          },
-          "link": null
-        }
-      ],
+      "inputs": [],
       "outputs": [
         {
-          "localized_name": "VAE",
           "name": "VAE",
           "type": "VAE",
           "links": [
@@ -66,99 +55,48 @@
       "id": 12,
       "type": "KSampler",
       "pos": [
-        594.8020983888581,
-        -659.2120912364653
+        43.522370292788494,
+        -583.0926700782151
       ],
       "size": [
-        210,
-        560.0952380952381
+        225,
+        466.8857047410244
       ],
       "flags": {},
       "order": 18,
       "mode": 0,
       "inputs": [
         {
-          "localized_name": "模型",
           "name": "model",
           "type": "MODEL",
           "link": 9
         },
         {
-          "localized_name": "正面条件",
           "name": "positive",
           "type": "CONDITIONING",
           "link": 10
         },
         {
-          "localized_name": "负面条件",
           "name": "negative",
           "type": "CONDITIONING",
           "link": 11
         },
         {
-          "localized_name": "Latent图像",
           "name": "latent_image",
           "type": "LATENT",
           "link": 12
         },
         {
-          "localized_name": "种子",
           "name": "seed",
           "type": "INT",
           "widget": {
             "name": "seed"
           },
           "link": 13
-        },
-        {
-          "localized_name": "步数",
-          "name": "steps",
-          "type": "INT",
-          "widget": {
-            "name": "steps"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "cfg",
-          "name": "cfg",
-          "type": "FLOAT",
-          "widget": {
-            "name": "cfg"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "采样器名称",
-          "name": "sampler_name",
-          "type": "COMBO",
-          "widget": {
-            "name": "sampler_name"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "调度器",
-          "name": "scheduler",
-          "type": "COMBO",
-          "widget": {
-            "name": "scheduler"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "降噪",
-          "name": "denoise",
-          "type": "FLOAT",
-          "widget": {
-            "name": "denoise"
-          },
-          "link": null
         }
       ],
       "outputs": [
         {
-          "localized_name": "Latent",
           "name": "LATENT",
           "type": "LATENT",
           "links": [
@@ -194,49 +132,19 @@
       "id": 15,
       "type": "CLIPLoader",
       "pos": [
-        -607.8948530474821,
-        -374.6294131072811
+        -1265.6961790895161,
+        -312.23291982004906
       ],
       "size": [
-        401.9863936381539,
-        106
+        397.5151554082946,
+        113.92048899149364
       ],
       "flags": {},
       "order": 1,
       "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "CLIP名称",
-          "name": "clip_name",
-          "type": "COMBO",
-          "widget": {
-            "name": "clip_name"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "类型",
-          "name": "type",
-          "type": "COMBO",
-          "widget": {
-            "name": "type"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "设备",
-          "name": "device",
-          "shape": 7,
-          "type": "COMBO",
-          "widget": {
-            "name": "device"
-          },
-          "link": null
-        }
-      ],
+      "inputs": [],
       "outputs": [
         {
-          "localized_name": "CLIP",
           "name": "CLIP",
           "type": "CLIP",
           "links": [
@@ -274,8 +182,8 @@
       "id": 19,
       "type": "LoraLoaderModelOnly",
       "pos": [
-        -606.660852921799,
-        -504.62179065124053
+        -1265.550395165304,
+        -475.2913396793974
       ],
       "size": [
         402.2337884498479,
@@ -286,33 +194,13 @@
       "mode": 0,
       "inputs": [
         {
-          "localized_name": "模型",
           "name": "model",
           "type": "MODEL",
           "link": 25
-        },
-        {
-          "localized_name": "LoRA名称",
-          "name": "lora_name",
-          "type": "COMBO",
-          "widget": {
-            "name": "lora_name"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "模型强度",
-          "name": "strength_model",
-          "type": "FLOAT",
-          "widget": {
-            "name": "strength_model"
-          },
-          "link": null
         }
       ],
       "outputs": [
         {
-          "localized_name": "模型",
           "name": "MODEL",
           "type": "MODEL",
           "links": [
@@ -326,11 +214,11 @@
         "Node name for S&R": "LoraLoaderModelOnly"
       },
       "widgets_values": [
-        "Krea2-编辑identity_edit_v1_2.safetensors",
+        "krea2\\Krea2-编辑identity_edit_v1_2.safetensors",
         1
       ],
       "widgets_values_named": {
-        "lora_name": "Krea2-编辑identity_edit_v1_2.safetensors",
+        "lora_name": "krea2\\Krea2-编辑identity_edit_v1_2.safetensors",
         "strength_model": 1
       },
       "color": "#323",
@@ -340,8 +228,8 @@
       "id": 21,
       "type": "UNETLoader",
       "pos": [
-        -606.4289820857997,
-        -638.3864001429255
+        -1262.2893060761712,
+        -631.1599466232311
       ],
       "size": [
         400.8176644778255,
@@ -350,29 +238,9 @@
       "flags": {},
       "order": 2,
       "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "UNet名称",
-          "name": "unet_name",
-          "type": "COMBO",
-          "widget": {
-            "name": "unet_name"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "数据类型",
-          "name": "weight_dtype",
-          "type": "COMBO",
-          "widget": {
-            "name": "weight_dtype"
-          },
-          "link": null
-        }
-      ],
+      "inputs": [],
       "outputs": [
         {
-          "localized_name": "模型",
           "name": "MODEL",
           "type": "MODEL",
           "links": [
@@ -393,11 +261,11 @@
         ]
       },
       "widgets_values": [
-        "krea2_turbo_fp8_scaled.safetensors",
+        "krea2\\krea2_turbo_fp8_scaled.safetensors",
         "default"
       ],
       "widgets_values_named": {
-        "unet_name": "krea2_turbo_fp8_scaled.safetensors",
+        "unet_name": "krea2\\krea2_turbo_fp8_scaled.safetensors",
         "weight_dtype": "default"
       },
       "color": "#323",
@@ -407,27 +275,25 @@
       "id": 8,
       "type": "VAEEncode",
       "pos": [
-        342.54628554139657,
-        -137.15425618606264
+        -634.7691205454605,
+        -613.1987833157841
       ],
       "size": [
         140,
         46
       ],
       "flags": {
-        "collapsed": true
+        "collapsed": false
       },
       "order": 11,
       "mode": 0,
       "inputs": [
         {
-          "localized_name": "像素",
           "name": "pixels",
           "type": "IMAGE",
           "link": 3
         },
         {
-          "localized_name": "vae",
           "name": "vae",
           "type": "VAE",
           "link": 4
@@ -435,7 +301,6 @@
       ],
       "outputs": [
         {
-          "localized_name": "Latent",
           "name": "LATENT",
           "type": "LATENT",
           "links": [
@@ -455,8 +320,8 @@
       "id": 20,
       "type": "Seed (rgthree)",
       "pos": [
-        347.58168843639714,
-        -641.1484684442894
+        -282.5405346551347,
+        -626.501543918264
       ],
       "size": [
         211.29750891219976,
@@ -478,10 +343,11 @@
         }
       ],
       "properties": {
-        "aux_id": "rgthree/rgthree-comfy",
+        "cnr_id": "rgthree-comfy",
         "ver": "6b76ee6f2c5a007710b5a16f97c94330d6ecc871",
         "randomMax": 1125899906842624,
-        "randomMin": 0
+        "randomMin": 0,
+        "aux_id": "rgthree/rgthree-comfy"
       },
       "widgets_values": [
         -1,
@@ -502,27 +368,25 @@
       "id": 11,
       "type": "VAEDecode",
       "pos": [
-        470.86214354260045,
-        -137.79229711610998
+        314.850223148524,
+        -138.62393736467985
       ],
       "size": [
         235.65500990369446,
         46
       ],
       "flags": {
-        "collapsed": true
+        "collapsed": false
       },
       "order": 19,
       "mode": 0,
       "inputs": [
         {
-          "localized_name": "Latent",
           "name": "samples",
           "type": "LATENT",
           "link": 7
         },
         {
-          "localized_name": "vae",
           "name": "vae",
           "type": "VAE",
           "link": 8
@@ -530,7 +394,6 @@
       ],
       "outputs": [
         {
-          "localized_name": "图像",
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
@@ -550,21 +413,20 @@
       "id": 9,
       "type": "EmptySD3LatentImage",
       "pos": [
-        -142.22582066528767,
-        -432.1277024713782
+        -803.8995849475384,
+        384.7655292364291
       ],
       "size": [
         270,
         150
       ],
       "flags": {
-        "collapsed": true
+        "collapsed": false
       },
       "order": 16,
       "mode": 0,
       "inputs": [
         {
-          "localized_name": "宽度",
           "name": "width",
           "type": "INT",
           "widget": {
@@ -573,27 +435,16 @@
           "link": 5
         },
         {
-          "localized_name": "高度",
           "name": "height",
           "type": "INT",
           "widget": {
             "name": "height"
           },
           "link": 6
-        },
-        {
-          "localized_name": "批量大小",
-          "name": "batch_size",
-          "type": "INT",
-          "widget": {
-            "name": "batch_size"
-          },
-          "link": null
         }
       ],
       "outputs": [
         {
-          "localized_name": "Latent",
           "name": "LATENT",
           "type": "LATENT",
           "links": [
@@ -624,22 +475,21 @@
       "id": 16,
       "type": "GetImageSize+",
       "pos": [
-        -143.0501059626165,
-        -497.7137760591618
+        -779.6662758774388,
+        216.0272477135352
       ],
       "size": [
         202.54217467551916,
         66
       ],
       "flags": {
-        "collapsed": true
+        "collapsed": false
       },
       "order": 13,
       "mode": 0,
       "inputs": [
         {
           "label": "图像",
-          "localized_name": "图像",
           "name": "image",
           "type": "IMAGE",
           "link": 21
@@ -648,7 +498,6 @@
       "outputs": [
         {
           "label": "宽度",
-          "localized_name": "宽度",
           "name": "width",
           "type": "INT",
           "links": [
@@ -657,7 +506,6 @@
         },
         {
           "label": "高度",
-          "localized_name": "高度",
           "name": "height",
           "type": "INT",
           "links": [
@@ -665,17 +513,16 @@
           ]
         },
         {
-          "localized_name": "count",
           "name": "count",
           "type": "INT",
           "links": null
         }
       ],
       "properties": {
-        "aux_id": "cubiq/ComfyUI_essentials",
+        "cnr_id": "comfyui_essentials",
         "ver": "9d9f4bedfc9f0321c19faf71855e228c93bd0dc9",
         "Node name for S&R": "GetImageSize+",
-        "cnr_id": "comfyui_essentials",
+        "aux_id": "cubiq/ComfyUI_essentials",
         "ue_properties": {
           "widget_ue_connectable": {},
           "input_ue_unconnectable": {},
@@ -689,8 +536,8 @@
       "id": 42,
       "type": "Note",
       "pos": [
-        88.22645906091964,
-        -360.39736132878807
+        -1518.475934459962,
+        12.562964954483505
       ],
       "size": [
         211.46784423795725,
@@ -716,8 +563,8 @@
       "id": 4,
       "type": "SaveImage",
       "pos": [
-        379.4647332327661,
-        -36.33848136862481
+        668.1333129209373,
+        -135.98367756593973
       ],
       "size": [
         429.53036527830614,
@@ -728,24 +575,13 @@
       "mode": 0,
       "inputs": [
         {
-          "localized_name": "图片",
           "name": "images",
           "type": "IMAGE",
           "link": 1
-        },
-        {
-          "localized_name": "文件名前缀",
-          "name": "filename_prefix",
-          "type": "STRING",
-          "widget": {
-            "name": "filename_prefix"
-          },
-          "link": null
         }
       ],
       "outputs": [
         {
-          "localized_name": "images",
           "name": "images",
           "type": "IMAGE",
           "links": []
@@ -767,39 +603,19 @@
       "id": 7,
       "type": "LoadImage",
       "pos": [
-        -608.9641076128077,
-        -41.50925523835403
+        -1267.7174100767065,
+        46.467648841778534
       ],
       "size": [
-        437.6981905395994,
-        681.3199692130289
+        398.0875086713555,
+        669.1215587340037
       ],
       "flags": {},
       "order": 5,
       "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "图像",
-          "name": "image",
-          "type": "COMBO",
-          "widget": {
-            "name": "image"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "选择文件上传",
-          "name": "upload",
-          "type": "IMAGEUPLOAD",
-          "widget": {
-            "name": "upload"
-          },
-          "link": null
-        }
-      ],
+      "inputs": [],
       "outputs": [
         {
-          "localized_name": "图像",
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
@@ -807,7 +623,6 @@
           ]
         },
         {
-          "localized_name": "遮罩",
           "name": "MASK",
           "type": "MASK",
           "links": null
@@ -816,7 +631,8 @@
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.26.0",
-        "Node name for S&R": "LoadImage"
+        "Node name for S&R": "LoadImage",
+        "guhaiImageValue": "测试图 (27).png"
       },
       "widgets_values": [
         "测试图 (27).png",
@@ -831,12 +647,12 @@
       "id": 13,
       "type": "Krea2EditGroundedEncode",
       "pos": [
-        108.38621458630405,
-        -430.4397752109572
+        -653.4462899842097,
+        -494.51478590335216
       ],
       "size": [
         225,
-        206
+        261.90339273220803
       ],
       "flags": {
         "collapsed": true
@@ -845,58 +661,25 @@
       "mode": 0,
       "inputs": [
         {
-          "localized_name": "clip",
           "name": "clip",
           "type": "CLIP",
           "link": 14
         },
         {
-          "localized_name": "image",
           "name": "image",
           "shape": 7,
           "type": "IMAGE",
           "link": 15
         },
         {
-          "localized_name": "image_b",
           "name": "image_b",
           "shape": 7,
           "type": "IMAGE",
-          "link": null
-        },
-        {
-          "localized_name": "prompt",
-          "name": "prompt",
-          "type": "STRING",
-          "widget": {
-            "name": "prompt"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "grounding_px",
-          "name": "grounding_px",
-          "shape": 7,
-          "type": "INT",
-          "widget": {
-            "name": "grounding_px"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "system_prompt",
-          "name": "system_prompt",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "system_prompt"
-          },
           "link": null
         }
       ],
       "outputs": [
         {
-          "localized_name": "条件",
           "name": "CONDITIONING",
           "type": "CONDITIONING",
           "links": [
@@ -906,9 +689,10 @@
       ],
       "title": "negative (leave empty)",
       "properties": {
-        "aux_id": "lbouaraba/comfyui-krea2edit",
+        "cnr_id": "comfyui-krea2edit",
         "ver": "86f886dac23013d88996e3a2e99093ba44d322fb",
-        "Node name for S&R": "Krea2EditGroundedEncode"
+        "Node name for S&R": "Krea2EditGroundedEncode",
+        "aux_id": "lbouaraba/comfyui-krea2edit"
       },
       "widgets_values": [
         "",
@@ -927,72 +711,47 @@
       "id": 17,
       "type": "Krea2EditGroundedEncode",
       "pos": [
-        111.66759574350526,
-        -495.25667103102114
+        -272.5785985225617,
+        -369.5954504787227
       ],
       "size": [
         239.1470703125,
         206
       ],
       "flags": {
-        "collapsed": true
+        "collapsed": false
       },
       "order": 15,
       "mode": 0,
       "inputs": [
         {
-          "localized_name": "clip",
           "name": "clip",
           "type": "CLIP",
           "link": 22
         },
         {
-          "localized_name": "image",
           "name": "image",
           "shape": 7,
           "type": "IMAGE",
           "link": 23
         },
         {
-          "localized_name": "image_b",
           "name": "image_b",
           "shape": 7,
           "type": "IMAGE",
           "link": null
         },
         {
-          "localized_name": "prompt",
           "name": "prompt",
           "type": "STRING",
           "widget": {
             "name": "prompt"
           },
           "link": 46
-        },
-        {
-          "localized_name": "grounding_px",
-          "name": "grounding_px",
-          "shape": 7,
-          "type": "INT",
-          "widget": {
-            "name": "grounding_px"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "system_prompt",
-          "name": "system_prompt",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "system_prompt"
-          },
-          "link": null
         }
       ],
       "outputs": [
         {
-          "localized_name": "条件",
           "name": "CONDITIONING",
           "type": "CONDITIONING",
           "links": [
@@ -1002,19 +761,20 @@
       ],
       "title": "Krea2 Edit (grounded)",
       "properties": {
-        "aux_id": "lbouaraba/comfyui-krea2edit",
+        "cnr_id": "comfyui-krea2edit",
         "ver": "86f886dac23013d88996e3a2e99093ba44d322fb",
-        "Node name for S&R": "Krea2EditGroundedEncode"
+        "Node name for S&R": "Krea2EditGroundedEncode",
+        "aux_id": "lbouaraba/comfyui-krea2edit"
       },
       "widgets_values": [
         "Change her outfit to a red raincoat.",
         768,
-        ""
+        "You are an expert prompt engineer for text-to-image models. Your task is to expand the user's prompt into a highly effective image-generation prompt.\n\nThink step by step about the request before writing the answer:\n- What is the subject and mood?\n- What visual styles, mediums, and lighting options would fit? Consider two or three alternatives and pick the one that best serves the request.\n- What composition, framing, and grounded details will help the text-to-image model?\n\nThen output a single expanded prompt paragraph.\n\nFollow these rules strictly:\n1. **Faithfulness First:** Preserve all original subjects, actions, colors, and spatial relationships. Do not add new objects, props, characters, or animals unless the user clearly implies them.\n2. **Practical T2I Structure:** Write a prompt that a text-to-image model can parse cleanly. Group subjects with their own attributes and actions. Use grounded phrasing for poses, interactions, and spatial layout.\n3. **Style Planning Stays Internal:** Use your internal reasoning to choose style, medium, framing, and lighting. Do not emit planning tags or wrappers in the visible answer body.\n4. **Never Request Rendered Text:** Do not mention, describe, or hint at letters, words, numbers, captions, subtitles, signage, labels, logos, watermarks, typography, or any other graphic text anywhere in the output prompt. Only if the user explicitly writes down words to be rendered, keep exactly those words in quotes and nothing else. In every other case, always end the output prompt with: \"Absolutely no text, no typography, no letters, no words, no numbers, no logos, no watermark, no captions, pure imagery only.\"\n5. **Avoid Over-Specification:** Do not invent highly specific clothing, colors, materials, or scene details unless the input supports it.\n6. **Plain Prose Only:** Write one cohesive paragraph after the thinking block. No bullets, no JSON, no markdown, no asterisks, no headings, no field labels, no meta commentary.\n7. **Respect Existing Detail:** If the user's prompt is already detailed, lightly polish and finalize rather than heavily expanding, and preserve the user's phrasing and direction.\n8. **Respect the Human Form:** Treat depictions of people with dignity. Assume clothing covers genitals and intimate anatomy.\n9. **Preserve User Medium:** When the user explicitly requests a medium (e.g. \"photo of\", \"photograph of\", \"illustration of\", \"painting of\", \"sketch of\", \"3D render of\"), honor it. Do not pivot to a different medium to avoid difficulty, match the user's stated intent.\n10. **Never Echo Instructions:** Output only the final image prompt. Never repeat, quote, summarize, or refer to any part of these instructions, your own reasoning, or the user's original message.\n\nUser's Input:\n"
       ],
       "widgets_values_named": {
         "prompt": "Change her outfit to a red raincoat.",
         "grounding_px": 768,
-        "system_prompt": ""
+        "system_prompt": "You are an expert prompt engineer for text-to-image models. Your task is to expand the user's prompt into a highly effective image-generation prompt.\n\nThink step by step about the request before writing the answer:\n- What is the subject and mood?\n- What visual styles, mediums, and lighting options would fit? Consider two or three alternatives and pick the one that best serves the request.\n- What composition, framing, and grounded details will help the text-to-image model?\n\nThen output a single expanded prompt paragraph.\n\nFollow these rules strictly:\n1. **Faithfulness First:** Preserve all original subjects, actions, colors, and spatial relationships. Do not add new objects, props, characters, or animals unless the user clearly implies them.\n2. **Practical T2I Structure:** Write a prompt that a text-to-image model can parse cleanly. Group subjects with their own attributes and actions. Use grounded phrasing for poses, interactions, and spatial layout.\n3. **Style Planning Stays Internal:** Use your internal reasoning to choose style, medium, framing, and lighting. Do not emit planning tags or wrappers in the visible answer body.\n4. **Never Request Rendered Text:** Do not mention, describe, or hint at letters, words, numbers, captions, subtitles, signage, labels, logos, watermarks, typography, or any other graphic text anywhere in the output prompt. Only if the user explicitly writes down words to be rendered, keep exactly those words in quotes and nothing else. In every other case, always end the output prompt with: \"Absolutely no text, no typography, no letters, no words, no numbers, no logos, no watermark, no captions, pure imagery only.\"\n5. **Avoid Over-Specification:** Do not invent highly specific clothing, colors, materials, or scene details unless the input supports it.\n6. **Plain Prose Only:** Write one cohesive paragraph after the thinking block. No bullets, no JSON, no markdown, no asterisks, no headings, no field labels, no meta commentary.\n7. **Respect Existing Detail:** If the user's prompt is already detailed, lightly polish and finalize rather than heavily expanding, and preserve the user's phrasing and direction.\n8. **Respect the Human Form:** Treat depictions of people with dignity. Assume clothing covers genitals and intimate anatomy.\n9. **Preserve User Medium:** When the user explicitly requests a medium (e.g. \"photo of\", \"photograph of\", \"illustration of\", \"painting of\", \"sketch of\", \"3D render of\"), honor it. Do not pivot to a different medium to avoid difficulty, match the user's stated intent.\n10. **Never Echo Instructions:** Output only the final image prompt. Never repeat, quote, summarize, or refer to any part of these instructions, your own reasoning, or the user's original message.\n\nUser's Input:\n"
       },
       "color": "#232",
       "bgcolor": "#353"
@@ -1023,105 +783,66 @@
       "id": 14,
       "type": "Krea2EditModelPatch",
       "pos": [
-        351.1882133922911,
-        -437.0299174317039
+        -675.3102472524743,
+        -431.74170141039417
       ],
       "size": [
         210,
-        246
+        294
       ],
       "flags": {},
       "order": 17,
       "mode": 0,
       "inputs": [
         {
-          "localized_name": "model",
           "name": "model",
           "type": "MODEL",
           "link": 16
         },
         {
-          "localized_name": "source_latent",
           "name": "source_latent",
           "type": "LATENT",
           "link": 17
         },
         {
-          "localized_name": "source_latent_b",
           "name": "source_latent_b",
           "shape": 7,
           "type": "LATENT",
           "link": null
         },
         {
-          "localized_name": "ref_boost_mask",
           "name": "ref_boost_mask",
           "shape": 7,
           "type": "MASK",
           "link": null
         },
         {
-          "localized_name": "vae",
           "name": "vae",
           "shape": 7,
           "type": "VAE",
           "link": 18
         },
         {
-          "localized_name": "source_image",
           "name": "source_image",
           "shape": 7,
           "type": "IMAGE",
           "link": 19
         },
         {
-          "localized_name": "source_image_b",
           "name": "source_image_b",
           "shape": 7,
           "type": "IMAGE",
           "link": null
         },
         {
-          "localized_name": "target_latent",
           "name": "target_latent",
           "shape": 7,
           "type": "LATENT",
           "link": 20
-        },
-        {
-          "localized_name": "ref_boost",
-          "name": "ref_boost",
-          "shape": 7,
-          "type": "FLOAT",
-          "widget": {
-            "name": "ref_boost"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "ref_boost_a",
-          "name": "ref_boost_a",
-          "shape": 7,
-          "type": "FLOAT",
-          "widget": {
-            "name": "ref_boost_a"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "fit_mode",
-          "name": "fit_mode",
-          "shape": 7,
-          "type": "COMBO",
-          "widget": {
-            "name": "fit_mode"
-          },
-          "link": null
         }
       ],
       "outputs": [
         {
-          "localized_name": "模型",
           "name": "MODEL",
           "type": "MODEL",
           "links": [
@@ -1130,19 +851,24 @@
         }
       ],
       "properties": {
-        "aux_id": "lbouaraba/comfyui-krea2edit",
+        "cnr_id": "comfyui-krea2edit",
         "ver": "86f886dac23013d88996e3a2e99093ba44d322fb",
-        "Node name for S&R": "Krea2EditModelPatch"
+        "Node name for S&R": "Krea2EditModelPatch",
+        "aux_id": "lbouaraba/comfyui-krea2edit"
       },
       "widgets_values": [
         1,
         1,
-        "fit"
+        "fit",
+        "aligned (trained)",
+        "aligned (trained)"
       ],
       "widgets_values_named": {
         "ref_boost": 1,
         "ref_boost_a": 1,
-        "fit_mode": "fit"
+        "fit_mode": "fit",
+        "ref_position": "aligned (trained)",
+        "ref_position_a": "aligned (trained)"
       },
       "color": "#432",
       "bgcolor": "#653"
@@ -1151,8 +877,8 @@
       "id": 40,
       "type": "easy showAnything",
       "pos": [
-        -144.67388031992567,
-        411.9224332333104
+        73.89600253683952,
+        181.16132885777688
       ],
       "size": [
         471.548794768898,
@@ -1164,7 +890,6 @@
       "inputs": [
         {
           "label": "输入任何",
-          "localized_name": "输入任何",
           "name": "anything",
           "shape": 7,
           "type": "*",
@@ -1173,16 +898,16 @@
       ],
       "outputs": [
         {
-          "localized_name": "输出",
           "name": "output",
           "type": "*",
           "links": null
         }
       ],
       "properties": {
-        "aux_id": "yolain/ComfyUI-Easy-Use",
+        "cnr_id": "comfyui-easy-use",
         "ver": "4de1ab3b66e48da916b6f263bacd001df53a2720",
-        "Node name for S&R": "easy showAnything"
+        "Node name for S&R": "easy showAnything",
+        "aux_id": "yolain/ComfyUI-Easy-Use"
       },
       "widgets_values": [
         "Style: A bold, flat cartoon illustration style built on thick, confident outline holding simplified, blocky proportions, bright, evenly applied flat color with minimal shading complexity, an exaggerated, oversized-head simplicity favoring instant graphic readability over anatomical detail, a loose, wobbly linework carrying deliberately crude, comedic charm, and a cheeky, irreverent cartoon energy that feels playful, satirical, and effortlessly recognizable. Influenced by: Yoshito Usui, crayon Shin-Chan character style, Studio Shin-Ei Animation tradition, flat-color cartoon technique, satirical children's-cartoon character-design practice.. Subject:Replace the image style with this style."
@@ -1195,12 +920,12 @@
       "id": 38,
       "type": "easy stylesSelector",
       "pos": [
-        -149.05580634767261,
-        -184.34878636276073
+        -427.4312886561496,
+        36.49482286289247
       ],
       "size": [
-        465.75426979794247,
-        526.6133544847954
+        425.5953916878007,
+        457.46682926071844
       ],
       "flags": {},
       "order": 10,
@@ -1208,7 +933,6 @@
       "inputs": [
         {
           "label": "正面提示词（可选）",
-          "localized_name": "正面提示词（可选）",
           "name": "positive",
           "shape": 7,
           "type": "STRING",
@@ -1216,7 +940,6 @@
         },
         {
           "label": "负面提示词（可选）",
-          "localized_name": "负面提示词（可选）",
           "name": "negative",
           "shape": 7,
           "type": "STRING",
@@ -1224,21 +947,10 @@
         },
         {
           "label": "风格类型",
-          "localized_name": "风格类型",
           "name": "styles",
           "type": "COMBO",
           "widget": {
             "name": "styles"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "select_styles",
-          "name": "select_styles",
-          "shape": 7,
-          "type": "EASY_PROMPT_STYLES",
-          "widget": {
-            "name": "select_styles"
           },
           "link": null
         }
@@ -1246,7 +958,6 @@
       "outputs": [
         {
           "label": "正面提示词",
-          "localized_name": "正面提示词",
           "name": "positive",
           "type": "STRING",
           "links": [
@@ -1256,23 +967,23 @@
         },
         {
           "label": "负面提示词",
-          "localized_name": "负面提示词",
           "name": "negative",
           "type": "STRING",
           "links": null
         }
       ],
       "properties": {
-        "aux_id": "yolain/ComfyUI-Easy-Use",
+        "cnr_id": "comfyui-easy-use",
         "ver": "4de1ab3b66e48da916b6f263bacd001df53a2720",
-        "Node name for S&R": "easy stylesSelector"
+        "Node name for S&R": "easy stylesSelector",
+        "aux_id": "yolain/ComfyUI-Easy-Use"
       },
       "widgets_values": [
-        "krea2_anime_动漫_styles",
+        "krea2_397styles-photography_摄影",
         "Crayon Shin-chan Style"
       ],
       "widgets_values_named": {
-        "styles": "krea2_anime_动漫_styles",
+        "styles": "krea2_397styles-photography_摄影",
         "select_styles": "Crayon Shin-chan Style"
       }
     },
@@ -1280,8 +991,8 @@
       "id": 18,
       "type": "PrimitiveStringMultiline",
       "pos": [
-        -154.55607975557714,
-        -647.8306374158958
+        -439.48855081105216,
+        571.519302559896
       ],
       "size": [
         457.6628643978074,
@@ -1290,20 +1001,9 @@
       "flags": {},
       "order": 6,
       "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "值",
-          "name": "value",
-          "type": "STRING",
-          "widget": {
-            "name": "value"
-          },
-          "link": null
-        }
-      ],
+      "inputs": [],
       "outputs": [
         {
-          "localized_name": "字符串",
           "name": "STRING",
           "type": "STRING",
           "links": [
@@ -1342,54 +1042,28 @@
       "id": 5,
       "type": "ImageScaleToTotalPixels",
       "pos": [
-        -143.17190826396123,
-        -364.9628179521974
+        -770.1776666589387,
+        42.1486672405683
       ],
       "size": [
-        210,
+        216.4927734375,
         106
       ],
-      "flags": {},
+      "flags": {
+        "collapsed": false
+      },
       "order": 9,
       "mode": 0,
+      "showAdvanced": false,
       "inputs": [
         {
-          "localized_name": "图像",
           "name": "image",
           "type": "IMAGE",
           "link": 2
-        },
-        {
-          "localized_name": "缩放算法",
-          "name": "upscale_method",
-          "type": "COMBO",
-          "widget": {
-            "name": "upscale_method"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "像素数量",
-          "name": "megapixels",
-          "type": "FLOAT",
-          "widget": {
-            "name": "megapixels"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "分辨率步数",
-          "name": "resolution_steps",
-          "type": "INT",
-          "widget": {
-            "name": "resolution_steps"
-          },
-          "link": null
         }
       ],
       "outputs": [
         {
-          "localized_name": "图像",
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
@@ -1677,13 +1351,49 @@
   ],
   "groups": [
     {
-      "id": 1,
-      "title": "▶krea2-单图编辑",
+      "id": 2,
+      "title": "模型加载",
       "bounding": [
-        -631.6118447492162,
-        -729.5944228701978,
-        1489.606894411351,
-        1388.6594096153544
+        -1275.6961790895161,
+        -701.1599466232311,
+        426.34069344873615,
+        637.0576021142933
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "图像处理",
+      "bounding": [
+        -1277.7174100767065,
+        -27.851332759431706,
+        753.8178251291682,
+        753.4405403352139
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 4,
+      "title": "风格化提示词",
+      "bounding": [
+        -467.3571514862401,
+        -33.50517713710753,
+        1022.8019487919777,
+        791.7863795005976
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 5,
+      "title": "采样",
+      "bounding": [
+        -750.083531059063,
+        -697.2398575405808,
+        1310.5887641112824,
+        640.0952380952381
       ],
       "color": "#3f789e",
       "flags": {}
@@ -1692,12 +1402,17 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5559917313493771,
+      "scale": 0.5054470284994359,
       "offset": [
-        2204.652608154994,
-        1249.3275933809698
+        2064.447652963965,
+        1236.8637856647588
       ]
-    }
+    },
+    "frontendVersion": "1.57.1"
   },
-  "version": 0.4
+  "version": 0.4,
+  "seed_widgets": {
+    "12": 0,
+    "20": 0
+  }
 }

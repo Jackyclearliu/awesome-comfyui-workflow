@@ -1,0 +1,1449 @@
+{
+  "id": "e28c56f1-0000-4000-8000-anima29btplv2",
+  "revision": 0,
+  "last_node_id": 31,
+  "last_link_id": 27,
+  "nodes": [
+    {
+      "id": 29,
+      "type": "Label (rgthree)",
+      "pos": [
+        0,
+        -160
+      ],
+      "size": [
+        1575.34375,
+        64
+      ],
+      "flags": {
+        "allow_interaction": true
+      },
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "▶Anima29B-16步-艺术构图哑光 · 提示词模板工作流 v2",
+      "properties": {
+        "fontSize": 64,
+        "fontFamily": "Arial",
+        "fontColor": "#3CB371",
+        "textAlign": "left",
+        "backgroundColor": "transparent",
+        "padding": 0,
+        "borderRadius": 0,
+        "angle": 0,
+        "Node name for S&R": "Label (rgthree)"
+      },
+      "color": "#fff0",
+      "bgcolor": "#fff0"
+    },
+    {
+      "id": 6,
+      "type": "AnimaV6RandomPrompt",
+      "pos": [
+        -30.00785479954269,
+        1229.4587428516088
+      ],
+      "size": [
+        400,
+        730
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            1
+          ]
+        },
+        {
+          "name": "report",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "level",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "cn_summary",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "Anima 提示词 · 哑光艺术构图",
+      "properties": {
+        "aux_id": "lingdongbudong/Comfyui-Anima-Wardrobe-V6",
+        "ver": "1.0.0",
+        "Node name for S&R": "AnimaV6RandomPrompt",
+        "cnr_id": "comfyui-workflow-encrypt",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "sfw",
+        2009142146,
+        "randomize",
+        "40",
+        0.65,
+        "",
+        "",
+        "",
+        "{\n \"fields\": {\n  \"n_canon\": 3\n },\n \"options\": {\n  \"n_canon\": {\n   \"c1\": 0,\n   \"c2\": 0,\n   \"c3\": 0,\n   \"c4\": 0,\n   \"c5\": 0,\n   \"c6\": 0,\n   \"c7\": 0,\n   \"c8\": 0,\n   \"c9\": 0,\n   \"c10\": 0,\n   \"c11\": 0,\n   \"c12\": 0,\n   \"c13\": 0,\n   \"c14\": 0,\n   \"sc_rain_street_lookback\": 0,\n   \"sc_classroom_chin_rest\": 0,\n   \"sc_rooftop_stretch\": 0,\n   \"sc_library_quiet\": 0,\n   \"sc_cafe_window_rain\": 0,\n   \"sc_shrine_walk\": 0,\n   \"sc_beach_midsummer\": 0,\n   \"sc_stairwell_up\": 0,\n   \"sc_morning_window\": 0,\n   \"sc_onsen_steam\": 0,\n   \"sc_pov_hands_selfie\": 0,\n   \"sc_train_home\": 0,\n   \"sc_snow_field_scarf\": 0,\n   \"sc_night_matsuri\": 0,\n   \"sc_night_snow_street\": 0,\n   \"sc_night_lake_moon\": 0,\n   \"sc_night_lighthouse\": 0,\n   \"sc_night_milkyway\": 0,\n   \"sc_night_aquarium\": 0,\n   \"sc_night_concert\": 0,\n   \"sc_night_ferris\": 0,\n   \"sc_night_last_train\": 0,\n   \"sc_night_izakaya\": 0,\n   \"sc_night_rooftop\": 0,\n   \"sc_night_hotel_window\": 0,\n   \"sc_pose_night_windowsill\": 0,\n   \"sc_pose_night_poolside\": 0,\n   \"sc_pose_night_bedside_lamp\": 0,\n   \"sc_pose_night_balcony_lean\": 3,\n   \"sc_pose_night_rooftop_sit\": 0,\n   \"sc_pose_night_stairs_sit\": 0,\n   \"sc_near_night_neon_face\": 0,\n   \"sc_near_night_candle_eye\": 0,\n   \"sc_near_night_moon_collar\": 0,\n   \"sc_art_night_neon_arch\": 0,\n   \"sc_art_night_moon_ladder\": 0,\n   \"sc_art_night_starfield\": 0,\n   \"sc_art_night_lantern_sea\": 0,\n   \"sc_ccc_night_hotel_window\": 0,\n   \"sc_ccc_night_car\": 0,\n   \"sc_ccc_night_tent\": 0,\n   \"sc_ccc_night_onsen\": 0,\n   \"sc_ccc_night_office\": 0,\n   \"sc_ccc_night_beach\": 0,\n   \"sc_ccc_night_livingroom\": 0,\n   \"sc_fisheye_room\": 0,\n   \"sc_dutch_alley_night\": 0,\n   \"sc_mirror_dressing\": 0,\n   \"sc_panorama_park\": 0,\n   \"sc_ccc_plain_daily\": 0,\n   \"sc_ccc_ntr_phone\": 0,\n   \"sc_ccc_ntr_window\": 0,\n   \"sc_ccc_bdsm_shibari\": 0,\n   \"sc_ccc_bdsm_gag\": 0,\n   \"sc_ccc_rbq_wall\": 0,\n   \"sc_ccc_tentacle\": 0,\n   \"sc_ccc_pet_play\": 0,\n   \"sc_ccc_coerce_wall\": 0,\n   \"sc_ccc_voyeur_cam\": 0,\n   \"sc_ccc_afterglow\": 0,\n   \"sc_ccc_hidden_sex\": 0,\n   \"sc_ccc_mating_press\": 0,\n   \"sc_ccc_dp_group\": 0,\n   \"sc_ccc_pov_crotch_self\": 0,\n   \"sc_classroom_afterschool\": 0,\n   \"sc_office_overtime\": 0,\n   \"sc_convenience_night\": 0,\n   \"sc_balcony_night\": 0,\n   \"sc_changing_room\": 0,\n   \"sc_fitting_room\": 0,\n   \"sc_elevator_ride\": 0,\n   \"sc_car_ride\": 0,\n   \"sc_flower_field\": 0,\n   \"sc_movie_theater\": 0,\n   \"sc_amusement_night\": 0,\n   \"sc_forest_fog\": 0,\n   \"sc_poolside_summer\": 0,\n   \"sc_bathroom_mirror\": 0,\n   \"sc_under_shower\": 0,\n   \"sc_ccc_missionary\": 0,\n   \"sc_ccc_doggystyle\": 0,\n   \"sc_ccc_cowgirl\": 0,\n   \"sc_ccc_stand_carry\": 0,\n   \"sc_ccc_clothed_sex\": 0,\n   \"sc_ccc_footjob\": 0,\n   \"sc_ccc_paizuri\": 0,\n   \"sc_ccc_facesitting\": 0,\n   \"sc_ccc_anal\": 0,\n   \"sc_ccc_ntr_split\": 0,\n   \"sc_ccc_bdsm_pillory\": 0,\n   \"sc_ccc_rbq_after\": 0,\n   \"sc_ccc_femdom_reverse\": 0,\n   \"sc_ccc_pov_oral\": 0,\n   \"sc_ccc_pov_cowgirl\": 0,\n   \"sc_poolside_microbikini\": 0,\n   \"sc_offshoulder_night\": 0,\n   \"sc_msb_panties_aside\": 0,\n   \"sc_msb_skirt_vacuum\": 0,\n   \"sc_msb_mirror_check\": 0,\n   \"sc_msb_bath_recline\": 0,\n   \"sc_msb_sofa_pull\": 0,\n   \"sc_msb_office_night\": 0,\n   \"sc_msb_fingers_bed\": 0,\n   \"sc_msb_dildo_ride\": 0,\n   \"sc_msb_vibrator_covers\": 0,\n   \"sc_msb_mirror_watch\": 0,\n   \"sc_msb_pov_self\": 0,\n   \"sc_msb_clothed\": 0,\n   \"sc_msb_bathtub_water\": 0,\n   \"sc_msb_shower_stand\": 0,\n   \"sc_msb_plug_rear\": 0,\n   \"sc_msb_toys_show\": 0,\n   \"sc_msb_continuous\": 0,\n   \"sc_msb_blindfold_toy\": 0,\n   \"sc_msb_mutual\": 0,\n   \"sc_msb_squirt_fingers\": 0,\n   \"sc_msb_squirt_dildo\": 0,\n   \"sc_msb_squirt_after\": 0,\n   \"sc_changing_room_peek\": 0,\n   \"sc_bedroom_sleepshirt\": 0,\n   \"sc_bath_towel\": 0,\n   \"sc_balcony_laundry\": 0,\n   \"sc_rain_wetshirt\": 0,\n   \"sc_sofa_catnap\": 0,\n   \"sc_konbini_midnight\": 0,\n   \"sc_kitchen_apron\": 0,\n   \"sc_skirt_wind\": 0,\n   \"sc_hotel_mirror\": 0,\n   \"sc_beach_volley\": 0,\n   \"sc_pool_ladder\": 0,\n   \"sc_surf_board\": 0,\n   \"sc_float_ring\": 0,\n   \"sc_shower_peek\": 0,\n   \"sc_watergun_fight\": 0,\n   \"sc_ol_overtime\": 0,\n   \"sc_maid_serving\": 0,\n   \"sc_nurse_rounds\": 0,\n   \"sc_classroom_openwin\": 0,\n   \"sc_jk_bike_ride\": 0,\n   \"sc_yoga_mat\": 0,\n   \"sc_gym_mirror\": 0,\n   \"sc_gymnastics_split\": 0,\n   \"sc_jog_rest\": 0,\n   \"sc_cam_wide_low_side\": 0,\n   \"sc_cam_med_high_kneel\": 0,\n   \"sc_cam_fisheye_squat\": 0,\n   \"sc_cam_bird_lying\": 0,\n   \"sc_cam_pov_stand\": 0,\n   \"sc_cam_low_stretch\": 0,\n   \"sc_cam_side_hairflip\": 0,\n   \"sc_cam_dutch_wall\": 0,\n   \"sc_cam_ots_lookback\": 0,\n   \"sc_cam_worm_sit\": 0,\n   \"sc_near_face_classroom\": 0,\n   \"sc_near_face_backlight\": 0,\n   \"sc_near_face_rain\": 0,\n   \"sc_near_face_mirror\": 0,\n   \"sc_near_face_lowgaze\": 0,\n   \"sc_near_face_tears\": 0,\n   \"sc_near_face_smile\": 0,\n   \"sc_near_face_bed\": 0,\n   \"sc_near_eye_single\": 0,\n   \"sc_near_eye_lash\": 0,\n   \"sc_near_lip_micro\": 0,\n   \"sc_near_lip_bite\": 0,\n   \"sc_near_collar_top\": 0,\n   \"sc_near_back_shoulder\": 0,\n   \"sc_near_towel_after\": 0,\n   \"sc_near_hand_cover\": 0,\n   \"sc_near_wet_cloth\": 0,\n   \"sc_near_shoulder_line\": 0,\n   \"sc_near_hand_lap\": 0,\n   \"sc_near_hand_lip\": 0,\n   \"sc_near_leg_thighhigh\": 0,\n   \"sc_near_leg_crossed\": 0,\n   \"sc_near_leg_kneel\": 0,\n   \"sc_near_leg_hem\": 0,\n   \"sc_near_leg_stand\": 0,\n   \"sc_near_leg_side\": 0,\n   \"sc_near_foot_bare\": 0,\n   \"sc_near_foot_sock\": 0,\n   \"sc_near_foot_heel\": 0,\n   \"sc_near_foot_curl\": 0,\n   \"sc_near_hip_back_stand\": 0,\n   \"sc_near_hip_seiza_back\": 0,\n   \"sc_near_hip_bent\": 0,\n   \"sc_near_hip_kneel_arch\": 0,\n   \"sc_near_hip_bare\": 0,\n   \"sc_near_hip_sheer\": 0,\n   \"sc_near_leg_sit_chair\": 0,\n   \"sc_near_leg_sit_floor\": 0,\n   \"sc_near_leg_bed_edge\": 0,\n   \"sc_near_leg_sofa_cross\": 0,\n   \"sc_near_leg_side_raise\": 0,\n   \"sc_near_leg_supine_reach\": 0,\n   \"sc_near_nsfw_cleavage\": 0,\n   \"sc_near_nsfw_garter\": 0,\n   \"sc_near_nsfw_tongue\": 0,\n   \"sc_near_nsfw_soles\": 0,\n   \"sc_near_nsfw_nipple\": 0,\n   \"sc_near_nsfw_panties\": 0,\n   \"sc_near_nsfw_sheer\": 0,\n   \"sc_near_nsfw_thighs\": 0,\n   \"sc_near_nsfw_allfours\": 0,\n   \"sc_near_nsfw_fellatio\": 0,\n   \"sc_near_nsfw_cunnilingus\": 0,\n   \"sc_near_nsfw_cum\": 0,\n   \"sc_near_nsfw_breast_massage\": 0,\n   \"sc_near_nsfw_nipple_suck\": 0,\n   \"sc_near_nsfw_breast_suck\": 0,\n   \"sc_near_nsfw_lactation\": 0,\n   \"sc_near_soft_breast_massage\": 0,\n   \"sc_near_soft_breast_hug\": 0,\n   \"sc_pose_seiza_front\": 0,\n   \"sc_pose_seiza_side\": 0,\n   \"sc_pose_seiza_lookback\": 0,\n   \"sc_pose_seiza_bow\": 0,\n   \"sc_pose_wariza\": 0,\n   \"sc_pose_indian\": 0,\n   \"sc_pose_on_floor\": 0,\n   \"sc_pose_one_knee\": 0,\n   \"sc_pose_kneeling_back\": 0,\n   \"sc_pose_all_fours\": 0,\n   \"sc_pose_squat\": 0,\n   \"sc_pose_crossed_ankles\": 0,\n   \"sc_pose_fetal\": 0,\n   \"sc_pose_one_leg_stand\": 0,\n   \"sc_pose_apartment_seiza\": 0,\n   \"sc_pose_shrine_kneel\": 0,\n   \"sc_pose_bed_kneel\": 0,\n   \"sc_pose_library_floor\": 0,\n   \"sc_pose_flowerfield_seiza\": 0,\n   \"sc_pose_poolside_kneel\": 0,\n   \"sc_pose_stage_one_knee\": 0,\n   \"sc_pose_rooftop_squat\": 0,\n   \"sc_pose_onsen_seiza\": 0,\n   \"sc_pose_classroom_sit\": 0,\n   \"sc_pose_standing_split\": 0,\n   \"sc_pose_standing_split_front\": 0,\n   \"sc_pose_standing_split_back\": 0,\n   \"sc_pose_against_wall\": 0,\n   \"sc_pose_contrapposto\": 0,\n   \"sc_pose_hands_on_knees\": 0,\n   \"sc_pose_head_rest\": 0,\n   \"sc_pose_legs_apart\": 0,\n   \"sc_pose_lying_prone\": 0,\n   \"sc_pose_bed_on_back\": 0,\n   \"sc_pose_tiptoes_stretch\": 0,\n   \"sc_pose_hug_knees\": 0,\n   \"sc_ccc_pov_self_body\": 0,\n   \"sc_wide_hill_sunset\": 0,\n   \"sc_wide_lake_mist\": 0,\n   \"sc_wide_bridge_night\": 0,\n   \"sc_wide_beach_dusk\": 0,\n   \"sc_wide_forest_path\": 0,\n   \"sc_wide_rain_street\": 0,\n   \"sc_wide_lighthouse\": 0,\n   \"sc_wide_ruins_beam\": 0,\n   \"sc_wide_snow_field\": 0,\n   \"sc_wide_flower_wind\": 0,\n   \"sc_wide_rooftop_twilight\": 0,\n   \"sc_wide_shrine_sakura\": 0,\n   \"sc_wide_mountain_lookback\": 0,\n   \"sc_wide_alley_lookback\": 0,\n   \"sc_wide_crosswalk_lookback\": 0,\n   \"sc_wide_river_lookback\": 0,\n   \"sc_les_sm_suspension_pair\": 0,\n   \"sc_les_sm_suspension_twine\": 0,\n   \"sc_les_sm_chair_machine\": 0,\n   \"sc_les_sm_wax_bound\": 0,\n   \"sc_les_sm_mutual_rope\": 0,\n   \"sc_les_sm_backtoback\": 0,\n   \"sc_les_sm_pet_leash\": 0,\n   \"sc_les_sm_collar_hold\": 0,\n   \"sc_les_sm_enema_bound\": 0,\n   \"sc_les_sm_clamp_pull\": 0,\n   \"sc_les_sm_anal_beads\": 0,\n   \"sc_les_sm_wooden_horse\": 0,\n   \"sc_les_sm_chastity_key\": 0,\n   \"sc_les_sm_clamp_weight\": 0,\n   \"sc_pose_skirt_lift_disdain\": 0,\n   \"sc_pose_sole_stomp_disdain\": 0,\n   \"sc_sock_office_elevator\": 0,\n   \"sc_sock_class_desk\": 0,\n   \"sc_sock_cafe_crossed\": 0,\n   \"sc_sock_home_sofa\": 0,\n   \"sc_sock_change_legup\": 0,\n   \"sc_sock_library_tiptoe\": 0,\n   \"sc_sock_stair_torn\": 0,\n   \"sc_sock_rain_wet\": 0,\n   \"sc_sock_hallway_nopanty\": 0,\n   \"sc_sock_shibari_room\": 0,\n   \"sc_pose_wind_hold_skirt\": 0,\n   \"sc_pose_seiza_rear_low\": 0,\n   \"sc_duo_hand_in_hand\": 0,\n   \"sc_duo_back_hug\": 0,\n   \"sc_duo_selfie\": 0,\n   \"sc_duo_lap_pillow\": 0,\n   \"sc_duo_feeding\": 0,\n   \"sc_duo_hair_braid\": 0,\n   \"sc_sakura_street_lookback\": 0,\n   \"sc_wedding_bouquet_wait\": 0,\n   \"sc_msb_suspension_dildo\": 0,\n   \"sc_art_hourglass\": 0,\n   \"sc_art_birdcage\": 0,\n   \"sc_art_flower_sleep\": 0,\n   \"sc_art_type_wall\": 0,\n   \"sc_art_vinyl_arch\": 0,\n   \"sc_art_paper_lantern\": 0,\n   \"sc_art_piano_stairs\": 0,\n   \"sc_art_clock_hand\": 0,\n   \"sc_art_umbrella_sky\": 0,\n   \"sc_art_specimen_case\": 0,\n   \"sc_art_zipper_wall\": 0,\n   \"sc_art_envelope\": 0,\n   \"sc_art_filmstrip_ring\": 0,\n   \"sc_art_aquarium\": 0,\n   \"sc_art_mirror_corridor\": 0,\n   \"sc_art_gear_wheel\": 0,\n   \"sc_art_rose_window\": 0,\n   \"sc_art_impossible_stairs\": 0,\n   \"sc_art_dandelion\": 0,\n   \"sc_art_torn_paper\": 0,\n   \"sc_art_keyhole\": 0,\n   \"sc_art_mirror_frame\": 0,\n   \"sc_art_giant_book\": 0,\n   \"sc_art_black_hourglass\": 0,\n   \"sc_art_black_type_wall\": 0,\n   \"sc_art_black_gear_wheel\": 0,\n   \"sc_art_black_keyhole\": 0,\n   \"sc_art_navy_clock\": 0,\n   \"sc_art_navy_filmstrip\": 0,\n   \"sc_art_navy_aquarium\": 0,\n   \"sc_art_navy_mirror_corridor\": 0,\n   \"sc_art_crimson_zipper\": 0,\n   \"sc_art_crimson_birdcage\": 0,\n   \"sc_art_crimson_rose_window\": 0,\n   \"sc_art_crimson_envelope\": 0,\n   \"sc_art_emerald_dandelion\": 0,\n   \"sc_art_emerald_impossible_stairs\": 0,\n   \"sc_art_emerald_umbrella_sky\": 0,\n   \"sc_art_emerald_piano_stairs\": 0,\n   \"sc_art_gold_vinyl_arch\": 0,\n   \"sc_art_gold_specimen_case\": 0,\n   \"sc_art_gold_torn_paper\": 0,\n   \"sc_art_gold_mirror_frame\": 0,\n   \"sc_art_gold_worm_hourglass\": 0,\n   \"sc_art_crimson_dutch_typewall\": 0,\n   \"sc_art_navy_ots_clock\": 0,\n   \"sc_art_white_framed_mirror\": 0,\n   \"sc_art_emerald_fisheye_gear\": 0,\n   \"sc_art_black_persp_stairs\": 0,\n   \"sc_art_crimson_pano_zipper\": 0,\n   \"sc_art_navy_mirror_aquarium\": 0,\n   \"sc_art_black_ub_dutch_umbrella\": 0,\n   \"sc_art_gold_cowboy_worm_clock\": 0,\n   \"sc_art_crimson_profile_rosewin\": 0,\n   \"sc_art_black_ub_framed_keyhole\": 0,\n   \"sc_art_emerald_bokeh_dandelion\": 0,\n   \"sc_art_navy_cowboy_vignette_vinyl\": 0,\n   \"sc_art_white_ub_birdseye_book\": 0,\n   \"sc_art_emerald_cowboy_fisheye_cage\": 0,\n   \"sc_art_piano_giant\": 0,\n   \"sc_art_cello_giant\": 0,\n   \"sc_art_harp_giant\": 0,\n   \"sc_art_organ_giant\": 0,\n   \"sc_art_violin_giant\": 0,\n   \"sc_art_drums_giant\": 0,\n   \"sc_art_guitar_giant\": 0,\n   \"sc_art_flute_giant\": 0,\n   \"sc_art_erhu_giant\": 0,\n   \"sc_art_xylophone_giant\": 0,\n   \"sc_art_piano\": 0,\n   \"sc_art_violin\": 0,\n   \"sc_art_cello\": 0,\n   \"sc_art_harp\": 0,\n   \"sc_art_accordion\": 0,\n   \"sc_art_trumpet\": 0,\n   \"sc_art_guqin\": 0,\n   \"sc_art_drumkit\": 0,\n   \"sc_art_musicbox\": 0,\n   \"sc_art_shamisen\": 0,\n   \"sc_art_ub_gpiano_key\": 0,\n   \"sc_art_ub_accordion\": 0,\n   \"sc_art_ub_mallet\": 0,\n   \"sc_art_cu_strings\": 0,\n   \"sc_art_cu_bow\": 0,\n   \"sc_art_cu_flute\": 0,\n   \"sc_art_cu_bubbles\": 0,\n   \"sc_art_ub_teacup\": 0,\n   \"sc_art_ub_bookpage\": 0,\n   \"sc_art_ub_calligraphy\": 0,\n   \"sc_art_ub_umbrella\": 0,\n   \"sc_art_ub_candle\": 0,\n   \"sc_art_duo_hourglass\": 0,\n   \"sc_art_duo_clock\": 0,\n   \"sc_art_duo_filmstrip\": 0,\n   \"sc_art_duo_aquarium\": 0,\n   \"sc_art_duo_birdcage\": 0,\n   \"sc_art_duo_zipper\": 0,\n   \"sc_art_duo_rose_window\": 0,\n   \"sc_art_duo_dandelion\": 0,\n   \"sc_art_duo_stairs\": 0,\n   \"sc_art_duo_giant_book\": 0,\n   \"sc_art_duo_vinyl\": 0,\n   \"sc_art_duo_gear\": 0,\n   \"sc_pose_yoga_mountain\": 0,\n   \"sc_pose_yoga_tree\": 0,\n   \"sc_pose_yoga_warrior_one\": 0,\n   \"sc_pose_yoga_warrior_two\": 0,\n   \"sc_pose_yoga_warrior_three\": 0,\n   \"sc_pose_yoga_triangle\": 0,\n   \"sc_pose_yoga_side_angle\": 0,\n   \"sc_pose_yoga_half_moon\": 0,\n   \"sc_pose_yoga_eagle\": 0,\n   \"sc_pose_yoga_dancer\": 0,\n   \"sc_pose_yoga_downward_dog\": 0,\n   \"sc_pose_yoga_upward_dog\": 0,\n   \"sc_pose_yoga_cobra\": 0,\n   \"sc_pose_yoga_locust\": 0,\n   \"sc_pose_yoga_cat_cow\": 0,\n   \"sc_pose_yoga_child\": 0,\n   \"sc_pose_yoga_pigeon\": 0,\n   \"sc_pose_yoga_butterfly\": 0,\n   \"sc_pose_yoga_lotus\": 0,\n   \"sc_pose_yoga_hero\": 0,\n   \"sc_pose_yoga_bridge\": 0,\n   \"sc_pose_yoga_boat\": 0,\n   \"sc_pose_yoga_camel\": 0,\n   \"sc_pose_yoga_plow\": 0,\n   \"sc_pose_yoga_shoulderstand\": 0,\n   \"sc_pose_yoga_wide_fold\": 0,\n   \"sc_pose_yoga_standing_fold\": 0,\n   \"sc_pose_yoga_seated_fold\": 0,\n   \"sc_pose_yoga_side_bend\": 0,\n   \"sc_pose_yoga_twist\": 0,\n   \"sc_pose_yoga_plank\": 0,\n   \"sc_pose_yoga_side_plank\": 0,\n   \"sc_pose_stretch_neck\": 0,\n   \"sc_pose_stretch_lunge\": 0,\n   \"sc_pose_stretch_figure_four\": 0,\n   \"sc_pose_stretch_doorway\": 0,\n   \"sc_pose_stretch_calf_wall\": 0,\n   \"sc_pose_stretch_quad\": 0,\n   \"sc_pose_stretch_arms_up\": 0,\n   \"sc_pose_stretch_straddle\": 0,\n   \"sc_pose_seated_knees_up\": 0,\n   \"sc_pose_supine_legs_camera\": 0,\n   \"sc_church_pew\": 0,\n   \"sc_cave_pool\": 0,\n   \"sc_garden_arch\": 0,\n   \"sc_desert_dune\": 0,\n   \"sc_bar_counter\": 0,\n   \"sc_n2_morning_shirt_lift\": 0,\n   \"sc_n2_bridge_skirt_lift\": 0,\n   \"sc_n2_stair_dress_lift\": 0,\n   \"sc_n2_pool_bikini_pull\": 0,\n   \"sc_n2_fitting_undressing\": 0,\n   \"sc_n2_entrance_panty_pull\": 0,\n   \"sc_n2_rain_wet_clothes\": 0,\n   \"sc_n2_alley_open_jacket\": 0,\n   \"sc_n2_office_collar_pull\": 0,\n   \"sc_n2_hotel_yukata_loose\": 0,\n   \"sc_ccc_reverse_cowgirl\": 0,\n   \"sc_ccc_prone_bone\": 0,\n   \"sc_ccc_leg_lock\": 0,\n   \"sc_ccc_sumata\": 0,\n   \"sc_ccc_intercrural\": 0,\n   \"sc_ccc_upright_straddle\": 0,\n   \"sc_duo_library_read\": 0,\n   \"sc_duo_umbrella_rain\": 0,\n   \"sc_duo_balcony_night\": 0,\n   \"sc_duo_onsen_steam\": 0,\n   \"sc_duo_sofa_lean\": 0,\n   \"sc_duo_hair_dry\": 0,\n   \"sc_duo_bath_foam\": 0,\n   \"sc_wp_blade_iaijutsu_low\": 0,\n   \"sc_wp_blade_tachi_silhouette\": 0,\n   \"sc_wp_blade_greatsword_draw\": 0,\n   \"sc_wp_blade_nodachi_turn\": 0,\n   \"sc_wp_blade_rapier_dust\": 0,\n   \"sc_wp_blade_wakizashi_night\": 0,\n   \"sc_wp_gun_pistol_low\": 0,\n   \"sc_wp_gun_rifle_silhouette\": 0,\n   \"sc_wp_gun_revolver_draw\": 0,\n   \"sc_wp_gun_shotgun_turn\": 0,\n   \"sc_wp_gun_sniper_dust\": 0,\n   \"sc_wp_gun_smg_night\": 0,\n   \"sc_wp_bow_yumi_low\": 0,\n   \"sc_wp_bow_longbow_silhouette\": 0,\n   \"sc_wp_bow_full_draw\": 0,\n   \"sc_wp_bow_horsebow_turn\": 0,\n   \"sc_wp_bow_crossbow_dust\": 0,\n   \"sc_wp_bow_arrow_night\": 0,\n   \"sc_wp_pole_naginata_low\": 0,\n   \"sc_wp_pole_spear_silhouette\": 0,\n   \"sc_wp_pole_halberd_draw\": 0,\n   \"sc_wp_pole_scythe_turn\": 0,\n   \"sc_wp_pole_staff_dust\": 0,\n   \"sc_wp_pole_axe_night\": 0,\n   \"sc_wp_shield_kite_low\": 0,\n   \"sc_wp_shield_round_silhouette\": 0,\n   \"sc_wp_shield_tower_draw\": 0,\n   \"sc_wp_shield_buckler_turn\": 0,\n   \"sc_wp_shield_wall_dust\": 0,\n   \"sc_wp_shield_mirror_night\": 0,\n   \"sc_wp_magic_staff_low\": 0,\n   \"sc_wp_magic_glyph_silhouette\": 0,\n   \"sc_wp_magic_blade_draw\": 0,\n   \"sc_wp_magic_grimoire_turn\": 0,\n   \"sc_wp_magic_orb_dust\": 0,\n   \"sc_wp_magic_sigil_night\": 0,\n   \"sc_wp_dual_dualblade_low\": 0,\n   \"sc_wp_dual_dualgun_silhouette\": 0,\n   \"sc_wp_dual_dagger_draw\": 0,\n   \"sc_wp_dual_kunai_turn\": 0,\n   \"sc_wp_dual_chain_dust\": 0,\n   \"sc_wp_dual_shuriken_night\": 0,\n   \"sc_wp_sci_saber_low\": 0,\n   \"sc_wp_sci_plasma_silhouette\": 0,\n   \"sc_wp_sci_mecharm_draw\": 0,\n   \"sc_wp_sci_drone_turn\": 0,\n   \"sc_wp_sci_cannon_dust\": 0,\n   \"sc_wp_sci_cyberblade_night\": 0,\n   \"sc_wp_eva_longinus\": 0,\n   \"sc_wp_eva_progknife\": 0,\n   \"sc_wp_eva_atfield\": 0,\n   \"sc_wp_eva_replica\": 0,\n   \"sc_wp_gi_skyward\": 0,\n   \"sc_wp_gi_wolfgrave\": 0,\n   \"sc_wp_gi_jadespear\": 0,\n   \"sc_wp_gi_lostprayer\": 0,\n   \"sc_wp_fate_excalibur\": 0,\n   \"sc_wp_fate_ea\": 0,\n   \"sc_wp_fate_gaebolg\": 0,\n   \"sc_wp_fate_avalon\": 0,\n   \"sc_wp_kny_nichirin\": 0,\n   \"sc_wp_kny_flame\": 0,\n   \"sc_wp_kny_dualblade\": 0,\n   \"sc_wp_kny_insect\": 0,\n   \"sc_wp_nier_virtuous\": 0,\n   \"sc_wp_nier_bloodoath\": 0,\n   \"sc_wp_nier_pod\": 0,\n   \"sc_wp_nier_machinearm\": 0,\n   \"sc_wp_hsr_lightcone\": 0,\n   \"sc_wp_hsr_cloudspear\": 0,\n   \"sc_wp_hsr_destruction\": 0,\n   \"sc_wp_hsr_erudition\": 0,\n   \"sc_wp_ff_buster\": 0,\n   \"sc_wp_ff_masamune\": 0,\n   \"sc_wp_ff_gunblade\": 0,\n   \"sc_wp_ff_sagestaff\": 0,\n   \"sc_wp_cyber_mantis\": 0,\n   \"sc_wp_cyber_smartpistol\": 0,\n   \"sc_wp_cyber_monowire\": 0,\n   \"sc_wp_cyber_gorilla\": 0,\n   \"sc_night_shrine_torii\": 0,\n   \"sc_ccc_night_shrine\": 0,\n   \"sc_night_bath_steam\": 0,\n   \"sc_ccc_night_bath\": 0,\n   \"sc_night_classroom_moon\": 0,\n   \"sc_ccc_night_classroom\": 0,\n   \"sc_night_cafe_closed\": 0,\n   \"sc_ccc_night_cafe\": 0,\n   \"sc_night_library_lamp\": 0,\n   \"sc_ccc_night_library\": 0,\n   \"sc_exp_night_park\": 0,\n   \"sc_exp_night_alley\": 0,\n   \"sc_exp_night_bridge\": 0,\n   \"sc_exp_night_beach\": 0,\n   \"sc_exp_night_street\": 0,\n   \"sc_exp_night_rooftop\": 0,\n   \"sc_exp_night_park_self\": 0,\n   \"sc_exp_night_alley_self\": 0,\n   \"sc_n2_balcony_laundry_lift\": 0,\n   \"sc_n2_bath_wet_nightgown\": 0,\n   \"sc_n2_kitchen_strap_slip\": 0,\n   \"sc_n2_library_stack_hem\": 0,\n   \"sc_n2_train_seat_dress_lift\": 0,\n   \"sc_n2_park_bench_change\": 0,\n   \"sc_n2_beach_sarong_slip\": 0,\n   \"sc_n2_shrine_obi_loose\": 0,\n   \"sc_n2_hallway_cardigan_open\": 0,\n   \"sc_n2_onsen_robe_slip\": 0,\n   \"sc_n2_cinema_collar_pull\": 0,\n   \"sc_n2_forest_picnic_hem\": 0,\n   \"sc_season_spring_river_walk\": 0,\n   \"sc_season_spring_park_picnic\": 0,\n   \"sc_season_spring_crosswalk\": 0,\n   \"sc_season_spring_balcony_tea\": 0,\n   \"sc_season_summer_sunflower\": 0,\n   \"sc_season_summer_bus_stop\": 0,\n   \"sc_season_summer_rooftop_shade\": 0,\n   \"sc_season_summer_cafe_iced\": 0,\n   \"sc_season_autumn_street_leaves\": 0,\n   \"sc_season_autumn_shrine_maple\": 0,\n   \"sc_season_autumn_garden_bench\": 0,\n   \"sc_season_autumn_mountain_path\": 0,\n   \"sc_season_winter_park_snow\": 0,\n   \"sc_season_winter_river_bank\": 0,\n   \"sc_season_winter_cafe_window\": 0,\n   \"sc_season_winter_apartment_sill\": 0,\n   \"sc_ccc_elevator_pin\": 0,\n   \"sc_msb_stairwell_leash\": 0,\n   \"sc_ccc_kitchen_counter\": 0,\n   \"sc_msb_kitchen_toys\": 0,\n   \"sc_ccc_changing_stall\": 0,\n   \"sc_msb_fitting_mess\": 0,\n   \"sc_ccc_poolside_night\": 0,\n   \"sc_msb_onsen_steam\": 0,\n   \"sc_ccc_park_night_bench\": 0,\n   \"sc_msb_park_night_ground\": 0,\n   \"sc_k2_still_section\": 0,\n   \"sc_k2_caustic_requiem\": 0,\n   \"sc_k2_after_field\": 0,\n   \"sc_k2_pressing_circle\": 0,\n   \"sc_k2_dune\": 0,\n   \"sc_k2_river_boat\": 0,\n   \"sc_k2_cloister\": 0,\n   \"sc_k2_paper_festival\": 0,\n   \"sc_k2_eave\": 0,\n   \"sc_k2_wiping_edge\": 0,\n   \"sc_k2_coast_balcony\": 0,\n   \"sc_k2_coast_lookout\": 0,\n   \"sc_k2_coast_pier\": 0,\n   \"sc_k2_coast_pool_edge\": 0,\n   \"sc_k2_coast_shower\": 0,\n   \"sc_k2_coast_surf\": 0,\n   \"sc_k2_coast_tide_pool\": 0,\n   \"sc_k2_corridor\": 0,\n   \"sc_k2_dry_garden\": 0,\n   \"sc_k2_first_snow\": 0,\n   \"sc_k2_forest_path\": 0,\n   \"sc_k2_ginkgo_walk\": 0,\n   \"sc_k2_glass_house\": 0,\n   \"sc_k2_hanabi_after\": 0,\n   \"sc_k2_hanabi_apple\": 0,\n   \"sc_k2_hanabi_bank\": 0,\n   \"sc_k2_hanabi_fan\": 0,\n   \"sc_k2_hanabi_goldfish\": 0,\n   \"sc_k2_hanabi_mask\": 0,\n   \"sc_k2_hanabi_pov\": 0,\n   \"sc_k2_cliff_edge\": 0,\n   \"sc_k2_kerb\": 0,\n   \"sc_k2_kiln_song\": 0,\n   \"sc_k2_kiosk\": 0,\n   \"sc_k2_lantern_tide\": 0,\n   \"sc_k2_home_bath\": 0,\n   \"sc_k2_home_closet\": 0,\n   \"sc_k2_home_dinner\": 0,\n   \"sc_k2_home_entry\": 0,\n   \"sc_k2_home_laundry_line\": 0,\n   \"sc_k2_home_linen\": 0,\n   \"sc_k2_home_plants\": 0,\n   \"sc_k2_home_stove\": 0,\n   \"sc_k2_idle_works\": 0,\n   \"sc_k2_indigo_drift\": 0,\n   \"sc_k2_indus_belltower\": 0,\n   \"sc_k2_indus_blast\": 0,\n   \"sc_k2_indus_dock\": 0,\n   \"sc_k2_indus_nave\": 0,\n   \"sc_k2_indus_pump\": 0,\n   \"sc_k2_back_alley\": 0,\n   \"sc_k2_bakery\": 0,\n   \"sc_k2_barber\": 0,\n   \"sc_k2_blue_hour\": 0,\n   \"sc_k2_bus_stop\": 0,\n   \"sc_k2_cavern\": 0,\n   \"sc_k2_hanabi_steps\": 0,\n   \"sc_k2_hanabi_yatai\": 0,\n   \"sc_k2_high_noon\": 0,\n   \"sc_k2_indus_reservoir\": 0,\n   \"sc_k2_indus_tower\": 0,\n   \"sc_k2_last_train\": 0,\n   \"sc_k2_lift_shaft\": 0,\n   \"sc_k2_moon_court\": 0,\n   \"sc_k2_moon_gate\": 0,\n   \"sc_k2_neon_strip\": 0,\n   \"sc_k2_night_folio\": 0,\n   \"sc_k2_north_light\": 0,\n   \"sc_k2_parkade\": 0,\n   \"sc_k2_petal_line\": 0,\n   \"sc_k2_phone_box\": 0,\n   \"sc_k2_pier_end\": 0,\n   \"sc_k2_rain_mart\": 0,\n   \"sc_k2_rain_platform\": 0,\n   \"sc_k2_river_bend\": 0,\n   \"sc_k2_roof_tank\": 0,\n   \"sc_k2_school_class\": 0,\n   \"sc_k2_school_court\": 0,\n   \"sc_k2_school_gym\": 0,\n   \"sc_k2_school_lab\": 0,\n   \"sc_k2_school_lockers\": 0,\n   \"sc_k2_school_music\": 0,\n   \"sc_k2_school_pool\": 0,\n   \"sc_k2_school_stairs\": 0,\n   \"sc_k2_skywalk\": 0,\n   \"sc_k2_solitary_tree\": 0,\n   \"sc_k2_stack_room\": 0,\n   \"sc_k2_still_lake\": 0,\n   \"sc_k2_tidal_flat\": 0,\n   \"sc_k2_underpass\": 0,\n   \"sc_k2_spin_cycle\": 0,\n   \"sc_k2_summit_night\": 0,\n   \"sc_k2_thread_bindery\": 0,\n   \"sc_k2_wheat_field\": 0,\n   \"sc_k2_window_seat\": 0,\n   \"sc_art_k2_veil_fall_a\": 0,\n   \"sc_art_k2_veil_fall_b\": 0,\n   \"sc_art_k2_meridian_cut\": 0,\n   \"sc_art_k2_triple_register_a\": 0,\n   \"sc_art_k2_triple_register_b\": 0,\n   \"sc_art_k2_root_register\": 0,\n   \"sc_art_k2_pod_separation\": 0,\n   \"sc_art_k2_vein_projection\": 0,\n   \"sc_art_k2_calyx_corridor\": 0,\n   \"sc_art_k2_pollen_storm\": 0,\n   \"sc_art_k2_second_specimen\": 0,\n   \"sc_art_k2_closing_register\": 0,\n   \"sc_art_k2_star_chart_roll\": 0,\n   \"sc_art_k2_celestial_corolla\": 0,\n   \"sc_art_k2_zero_day_garden\": 0,\n   \"sc_art_k2_gravity_theater\": 0,\n   \"sc_art_k2_zero_gravity_field\": 0,\n   \"sc_art_k2_prism_tide\": 0,\n   \"sc_art_k2_helix_choir\": 0,\n   \"sc_art_k2_dendrite_survey\": 0,\n   \"sc_art_k2_crystal_rain\": 0,\n   \"sc_art_k2_phonon_tunnel_a\": 0,\n   \"sc_art_k2_phonon_tunnel_b\": 0,\n   \"sc_art_k2_magnetic_field\": 0,\n   \"sc_art_k2_mirror_plume\": 0,\n   \"sc_art_k2_orbital_celesta\": 0,\n   \"sc_art_k2_echo_codex\": 0,\n   \"sc_art_k2_mirror_tide_opera\": 0,\n   \"sc_art_k2_grain_sanctum\": 0,\n   \"sc_art_k2_blackbody\": 0,\n   \"sc_art_k2_organon\": 0,\n   \"sc_art_k2_fog_chronometer\": 0,\n   \"sc_art_k2_salt_tide_archive\": 0,\n   \"sc_art_k2_ring_bind\": 0,\n   \"sc_art_k2_ring_break\": 0,\n   \"sc_art_k2_ring_cage\": 0,\n   \"sc_art_k2_ring_cast\": 0,\n   \"sc_art_k2_ring_hall\": 0,\n   \"sc_art_k2_ring_forest\": 0,\n   \"sc_art_k2_ring_gate\": 0,\n   \"sc_art_k2_ring_rift\": 0,\n   \"sc_art_k2_ring_snow\": 0,\n   \"sc_art_k2_ring_stage\": 0,\n   \"sc_art_k2_ring_well\": 0,\n   \"sc_art_k2_spell_void\": 0,\n   \"sc_art_k2_market_ring\": 0,\n   \"sc_k2_pose_chain_reach\": 0,\n   \"sc_k2_pose_floating_step\": 0,\n   \"sc_k2_pose_gate_turn\": 0,\n   \"sc_k2_pose_mirror_ledge\": 0,\n   \"sc_k2_pose_oculus\": 0,\n   \"sc_k2_pose_porcelain\": 0,\n   \"sc_k2_pose_stone_seat\": 0,\n   \"sc_k2_pose_veil_column\": 0,\n   \"sc_wp_k2_axe_foundry\": 0,\n   \"sc_wp_k2_bow_drawn\": 0,\n   \"sc_wp_k2_bow_monolith\": 0,\n   \"sc_wp_k2_broken_blade\": 0,\n   \"sc_wp_k2_chain_flail\": 0,\n   \"sc_wp_k2_dropped_blade\": 0,\n   \"sc_wp_k2_greatsword_field\": 0,\n   \"sc_wp_k2_halberd_tower\": 0,\n   \"sc_wp_k2_half_sheathed\": 0,\n   \"sc_wp_k2_kneel_blade\": 0,\n   \"sc_wp_k2_reverse_grip\": 0,\n   \"sc_wp_k2_scythe_gate\": 0,\n   \"sc_wp_k2_shield_wall\": 0,\n   \"sc_wp_k2_shoulder_guard\": 0,\n   \"sc_wp_k2_spear_point\": 0,\n   \"sc_wp_k2_spear_clouds\": 0,\n   \"sc_wp_k2_sheathing\": 0,\n   \"sc_wp_k2_steel_wiped\": 0,\n   \"sc_wp_k2_stuck_ground\": 0,\n   \"sc_wp_k2_tip_down\": 0,\n   \"sc_sink_legs_up\": 0\n  },\n  \"count\": {\n   \"1girl, solo\": 3\n  },\n  \"makeup\": {\n   \"glossy lips\": 0,\n   \"blush\": 0,\n   \"eyeliner\": 0,\n   \"eyeshadow\": 0,\n   \"mole under eye\": 0,\n   \"red lipstick\": 0,\n   \"black lipstick\": 0,\n   \"nail polish\": 0,\n   \"red nail polish\": 0,\n   \"eyebags, blush, eyeliner, glossy lips\": 0,\n   \"blush, half-closed eyes, eyeliner\": 0,\n   \"mole under eye, blush, glossy lips\": 0,\n   \"pale skin, black lipstick, eyeshadow\": 0\n  },\n  \"nails\": {\n   \"nail polish\": 0,\n   \"red nail polish\": 0\n  },\n  \"skin_detail\": {\n   \"glistening skin\": 0,\n   \"mole under eye\": 0\n  },\n  \"hair_fx\": {\n   \"wet hair\": 0,\n   \"wet hair, hair over eyes\": 0,\n   \"glossy hair\": 0\n  },\n  \"leg\": {\n   \"long legs\": 0\n  },\n  \"figure\": {\n   \"voluptuous\": 0\n  },\n  \"skin\": {\n   \"tanlines\": 0,\n   \"pale skin\": 0\n  },\n  \"emotion\": {\n   \"embarrassed, blush\": 0\n  },\n  \"mouth\": {\n   \"parted lips\": 0\n  }\n },\n \"_ui\": {\n  \"tab\": \"near\",\n  \"openSecs\": [\n   \"count\",\n   \"hair\",\n   \"face\"\n  ],\n  \"sceneOpen\": {},\n  \"sceneGroup\": \"all\",\n  \"scenePick\": {\n   \"pose\": [],\n   \"weapon\": [],\n   \"near\": [],\n   \"art\": []\n  },\n  \"poseCat\": \"all\",\n  \"weaponWork\": \"all\",\n  \"weaponCat\": \"all\",\n  \"outfitCat\": \"\",\n  \"outfitCatOpen\": false,\n  \"dryDetailOpen\": true,\n  \"outfitQuery\": \"\",\n  \"outfitOpen\": {},\n  \"sceneBg\": \"\",\n  \"sceneQuery\": \"\",\n  \"sceneAspect\": \"all\",\n  \"frameRatio\": \"9:16\",\n  \"frameMemo\": {\n   \"p\": \"9:16\",\n   \"s\": \"1:1\",\n   \"l\": \"16:9\"\n  },\n  \"sceneTheme\": \"\",\n  \"sceneThemeAll\": false,\n  \"sceneThemeOpen\": true,\n  \"nearPartOpen\": true,\n  \"sceneFavOnly\": false,\n  \"sceneFavOpen\": false,\n  \"sceneTipOpen\": false,\n  \"sceneCompact\": false,\n  \"sceneThumb\": true,\n  \"outfitThumb\": true,\n  \"sceneClosed\": {},\n  \"nearPart\": \"\",\n  \"charWork\": \"zenless_zone_zero\",\n  \"charQuery\": \"\",\n  \"charTraits\": [],\n  \"charTraitOpen\": false,\n  \"sceneLimit\": 120,\n  \"scroll\": {\n   \"left\": 0.06860200337172605,\n   \"right\": 0.626959228515625\n  }\n }\n}",
+        "",
+        true,
+        "remielle_dan",
+        false,
+        "",
+        "不指定",
+        "随机",
+        false,
+        true,
+        "角色标签发型",
+        "角色标签发型",
+        "角色标签发型",
+        "角色标签发型",
+        true,
+        false,
+        false,
+        "",
+        "",
+        true,
+        "",
+        ""
+      ],
+      "widgets_values_named": {
+        "nsfw_level": "sfw",
+        "seed": 2009142146,
+        "control_after_generate": "randomize",
+        "tag_cap": "40",
+        "base_prob": 0.65,
+        "disabled_sections": "",
+        "lock_fields": "",
+        "force_role": "",
+        "weights_json": "{\n \"fields\": {\n  \"n_canon\": 3\n },\n \"options\": {\n  \"n_canon\": {\n   \"c1\": 0,\n   \"c2\": 0,\n   \"c3\": 0,\n   \"c4\": 0,\n   \"c5\": 0,\n   \"c6\": 0,\n   \"c7\": 0,\n   \"c8\": 0,\n   \"c9\": 0,\n   \"c10\": 0,\n   \"c11\": 0,\n   \"c12\": 0,\n   \"c13\": 0,\n   \"c14\": 0,\n   \"sc_rain_street_lookback\": 0,\n   \"sc_classroom_chin_rest\": 0,\n   \"sc_rooftop_stretch\": 0,\n   \"sc_library_quiet\": 0,\n   \"sc_cafe_window_rain\": 0,\n   \"sc_shrine_walk\": 0,\n   \"sc_beach_midsummer\": 0,\n   \"sc_stairwell_up\": 0,\n   \"sc_morning_window\": 0,\n   \"sc_onsen_steam\": 0,\n   \"sc_pov_hands_selfie\": 0,\n   \"sc_train_home\": 0,\n   \"sc_snow_field_scarf\": 0,\n   \"sc_night_matsuri\": 0,\n   \"sc_night_snow_street\": 0,\n   \"sc_night_lake_moon\": 0,\n   \"sc_night_lighthouse\": 0,\n   \"sc_night_milkyway\": 0,\n   \"sc_night_aquarium\": 0,\n   \"sc_night_concert\": 0,\n   \"sc_night_ferris\": 0,\n   \"sc_night_last_train\": 0,\n   \"sc_night_izakaya\": 0,\n   \"sc_night_rooftop\": 0,\n   \"sc_night_hotel_window\": 0,\n   \"sc_pose_night_windowsill\": 0,\n   \"sc_pose_night_poolside\": 0,\n   \"sc_pose_night_bedside_lamp\": 0,\n   \"sc_pose_night_balcony_lean\": 3,\n   \"sc_pose_night_rooftop_sit\": 0,\n   \"sc_pose_night_stairs_sit\": 0,\n   \"sc_near_night_neon_face\": 0,\n   \"sc_near_night_candle_eye\": 0,\n   \"sc_near_night_moon_collar\": 0,\n   \"sc_art_night_neon_arch\": 0,\n   \"sc_art_night_moon_ladder\": 0,\n   \"sc_art_night_starfield\": 0,\n   \"sc_art_night_lantern_sea\": 0,\n   \"sc_ccc_night_hotel_window\": 0,\n   \"sc_ccc_night_car\": 0,\n   \"sc_ccc_night_tent\": 0,\n   \"sc_ccc_night_onsen\": 0,\n   \"sc_ccc_night_office\": 0,\n   \"sc_ccc_night_beach\": 0,\n   \"sc_ccc_night_livingroom\": 0,\n   \"sc_fisheye_room\": 0,\n   \"sc_dutch_alley_night\": 0,\n   \"sc_mirror_dressing\": 0,\n   \"sc_panorama_park\": 0,\n   \"sc_ccc_plain_daily\": 0,\n   \"sc_ccc_ntr_phone\": 0,\n   \"sc_ccc_ntr_window\": 0,\n   \"sc_ccc_bdsm_shibari\": 0,\n   \"sc_ccc_bdsm_gag\": 0,\n   \"sc_ccc_rbq_wall\": 0,\n   \"sc_ccc_tentacle\": 0,\n   \"sc_ccc_pet_play\": 0,\n   \"sc_ccc_coerce_wall\": 0,\n   \"sc_ccc_voyeur_cam\": 0,\n   \"sc_ccc_afterglow\": 0,\n   \"sc_ccc_hidden_sex\": 0,\n   \"sc_ccc_mating_press\": 0,\n   \"sc_ccc_dp_group\": 0,\n   \"sc_ccc_pov_crotch_self\": 0,\n   \"sc_classroom_afterschool\": 0,\n   \"sc_office_overtime\": 0,\n   \"sc_convenience_night\": 0,\n   \"sc_balcony_night\": 0,\n   \"sc_changing_room\": 0,\n   \"sc_fitting_room\": 0,\n   \"sc_elevator_ride\": 0,\n   \"sc_car_ride\": 0,\n   \"sc_flower_field\": 0,\n   \"sc_movie_theater\": 0,\n   \"sc_amusement_night\": 0,\n   \"sc_forest_fog\": 0,\n   \"sc_poolside_summer\": 0,\n   \"sc_bathroom_mirror\": 0,\n   \"sc_under_shower\": 0,\n   \"sc_ccc_missionary\": 0,\n   \"sc_ccc_doggystyle\": 0,\n   \"sc_ccc_cowgirl\": 0,\n   \"sc_ccc_stand_carry\": 0,\n   \"sc_ccc_clothed_sex\": 0,\n   \"sc_ccc_footjob\": 0,\n   \"sc_ccc_paizuri\": 0,\n   \"sc_ccc_facesitting\": 0,\n   \"sc_ccc_anal\": 0,\n   \"sc_ccc_ntr_split\": 0,\n   \"sc_ccc_bdsm_pillory\": 0,\n   \"sc_ccc_rbq_after\": 0,\n   \"sc_ccc_femdom_reverse\": 0,\n   \"sc_ccc_pov_oral\": 0,\n   \"sc_ccc_pov_cowgirl\": 0,\n   \"sc_poolside_microbikini\": 0,\n   \"sc_offshoulder_night\": 0,\n   \"sc_msb_panties_aside\": 0,\n   \"sc_msb_skirt_vacuum\": 0,\n   \"sc_msb_mirror_check\": 0,\n   \"sc_msb_bath_recline\": 0,\n   \"sc_msb_sofa_pull\": 0,\n   \"sc_msb_office_night\": 0,\n   \"sc_msb_fingers_bed\": 0,\n   \"sc_msb_dildo_ride\": 0,\n   \"sc_msb_vibrator_covers\": 0,\n   \"sc_msb_mirror_watch\": 0,\n   \"sc_msb_pov_self\": 0,\n   \"sc_msb_clothed\": 0,\n   \"sc_msb_bathtub_water\": 0,\n   \"sc_msb_shower_stand\": 0,\n   \"sc_msb_plug_rear\": 0,\n   \"sc_msb_toys_show\": 0,\n   \"sc_msb_continuous\": 0,\n   \"sc_msb_blindfold_toy\": 0,\n   \"sc_msb_mutual\": 0,\n   \"sc_msb_squirt_fingers\": 0,\n   \"sc_msb_squirt_dildo\": 0,\n   \"sc_msb_squirt_after\": 0,\n   \"sc_changing_room_peek\": 0,\n   \"sc_bedroom_sleepshirt\": 0,\n   \"sc_bath_towel\": 0,\n   \"sc_balcony_laundry\": 0,\n   \"sc_rain_wetshirt\": 0,\n   \"sc_sofa_catnap\": 0,\n   \"sc_konbini_midnight\": 0,\n   \"sc_kitchen_apron\": 0,\n   \"sc_skirt_wind\": 0,\n   \"sc_hotel_mirror\": 0,\n   \"sc_beach_volley\": 0,\n   \"sc_pool_ladder\": 0,\n   \"sc_surf_board\": 0,\n   \"sc_float_ring\": 0,\n   \"sc_shower_peek\": 0,\n   \"sc_watergun_fight\": 0,\n   \"sc_ol_overtime\": 0,\n   \"sc_maid_serving\": 0,\n   \"sc_nurse_rounds\": 0,\n   \"sc_classroom_openwin\": 0,\n   \"sc_jk_bike_ride\": 0,\n   \"sc_yoga_mat\": 0,\n   \"sc_gym_mirror\": 0,\n   \"sc_gymnastics_split\": 0,\n   \"sc_jog_rest\": 0,\n   \"sc_cam_wide_low_side\": 0,\n   \"sc_cam_med_high_kneel\": 0,\n   \"sc_cam_fisheye_squat\": 0,\n   \"sc_cam_bird_lying\": 0,\n   \"sc_cam_pov_stand\": 0,\n   \"sc_cam_low_stretch\": 0,\n   \"sc_cam_side_hairflip\": 0,\n   \"sc_cam_dutch_wall\": 0,\n   \"sc_cam_ots_lookback\": 0,\n   \"sc_cam_worm_sit\": 0,\n   \"sc_near_face_classroom\": 0,\n   \"sc_near_face_backlight\": 0,\n   \"sc_near_face_rain\": 0,\n   \"sc_near_face_mirror\": 0,\n   \"sc_near_face_lowgaze\": 0,\n   \"sc_near_face_tears\": 0,\n   \"sc_near_face_smile\": 0,\n   \"sc_near_face_bed\": 0,\n   \"sc_near_eye_single\": 0,\n   \"sc_near_eye_lash\": 0,\n   \"sc_near_lip_micro\": 0,\n   \"sc_near_lip_bite\": 0,\n   \"sc_near_collar_top\": 0,\n   \"sc_near_back_shoulder\": 0,\n   \"sc_near_towel_after\": 0,\n   \"sc_near_hand_cover\": 0,\n   \"sc_near_wet_cloth\": 0,\n   \"sc_near_shoulder_line\": 0,\n   \"sc_near_hand_lap\": 0,\n   \"sc_near_hand_lip\": 0,\n   \"sc_near_leg_thighhigh\": 0,\n   \"sc_near_leg_crossed\": 0,\n   \"sc_near_leg_kneel\": 0,\n   \"sc_near_leg_hem\": 0,\n   \"sc_near_leg_stand\": 0,\n   \"sc_near_leg_side\": 0,\n   \"sc_near_foot_bare\": 0,\n   \"sc_near_foot_sock\": 0,\n   \"sc_near_foot_heel\": 0,\n   \"sc_near_foot_curl\": 0,\n   \"sc_near_hip_back_stand\": 0,\n   \"sc_near_hip_seiza_back\": 0,\n   \"sc_near_hip_bent\": 0,\n   \"sc_near_hip_kneel_arch\": 0,\n   \"sc_near_hip_bare\": 0,\n   \"sc_near_hip_sheer\": 0,\n   \"sc_near_leg_sit_chair\": 0,\n   \"sc_near_leg_sit_floor\": 0,\n   \"sc_near_leg_bed_edge\": 0,\n   \"sc_near_leg_sofa_cross\": 0,\n   \"sc_near_leg_side_raise\": 0,\n   \"sc_near_leg_supine_reach\": 0,\n   \"sc_near_nsfw_cleavage\": 0,\n   \"sc_near_nsfw_garter\": 0,\n   \"sc_near_nsfw_tongue\": 0,\n   \"sc_near_nsfw_soles\": 0,\n   \"sc_near_nsfw_nipple\": 0,\n   \"sc_near_nsfw_panties\": 0,\n   \"sc_near_nsfw_sheer\": 0,\n   \"sc_near_nsfw_thighs\": 0,\n   \"sc_near_nsfw_allfours\": 0,\n   \"sc_near_nsfw_fellatio\": 0,\n   \"sc_near_nsfw_cunnilingus\": 0,\n   \"sc_near_nsfw_cum\": 0,\n   \"sc_near_nsfw_breast_massage\": 0,\n   \"sc_near_nsfw_nipple_suck\": 0,\n   \"sc_near_nsfw_breast_suck\": 0,\n   \"sc_near_nsfw_lactation\": 0,\n   \"sc_near_soft_breast_massage\": 0,\n   \"sc_near_soft_breast_hug\": 0,\n   \"sc_pose_seiza_front\": 0,\n   \"sc_pose_seiza_side\": 0,\n   \"sc_pose_seiza_lookback\": 0,\n   \"sc_pose_seiza_bow\": 0,\n   \"sc_pose_wariza\": 0,\n   \"sc_pose_indian\": 0,\n   \"sc_pose_on_floor\": 0,\n   \"sc_pose_one_knee\": 0,\n   \"sc_pose_kneeling_back\": 0,\n   \"sc_pose_all_fours\": 0,\n   \"sc_pose_squat\": 0,\n   \"sc_pose_crossed_ankles\": 0,\n   \"sc_pose_fetal\": 0,\n   \"sc_pose_one_leg_stand\": 0,\n   \"sc_pose_apartment_seiza\": 0,\n   \"sc_pose_shrine_kneel\": 0,\n   \"sc_pose_bed_kneel\": 0,\n   \"sc_pose_library_floor\": 0,\n   \"sc_pose_flowerfield_seiza\": 0,\n   \"sc_pose_poolside_kneel\": 0,\n   \"sc_pose_stage_one_knee\": 0,\n   \"sc_pose_rooftop_squat\": 0,\n   \"sc_pose_onsen_seiza\": 0,\n   \"sc_pose_classroom_sit\": 0,\n   \"sc_pose_standing_split\": 0,\n   \"sc_pose_standing_split_front\": 0,\n   \"sc_pose_standing_split_back\": 0,\n   \"sc_pose_against_wall\": 0,\n   \"sc_pose_contrapposto\": 0,\n   \"sc_pose_hands_on_knees\": 0,\n   \"sc_pose_head_rest\": 0,\n   \"sc_pose_legs_apart\": 0,\n   \"sc_pose_lying_prone\": 0,\n   \"sc_pose_bed_on_back\": 0,\n   \"sc_pose_tiptoes_stretch\": 0,\n   \"sc_pose_hug_knees\": 0,\n   \"sc_ccc_pov_self_body\": 0,\n   \"sc_wide_hill_sunset\": 0,\n   \"sc_wide_lake_mist\": 0,\n   \"sc_wide_bridge_night\": 0,\n   \"sc_wide_beach_dusk\": 0,\n   \"sc_wide_forest_path\": 0,\n   \"sc_wide_rain_street\": 0,\n   \"sc_wide_lighthouse\": 0,\n   \"sc_wide_ruins_beam\": 0,\n   \"sc_wide_snow_field\": 0,\n   \"sc_wide_flower_wind\": 0,\n   \"sc_wide_rooftop_twilight\": 0,\n   \"sc_wide_shrine_sakura\": 0,\n   \"sc_wide_mountain_lookback\": 0,\n   \"sc_wide_alley_lookback\": 0,\n   \"sc_wide_crosswalk_lookback\": 0,\n   \"sc_wide_river_lookback\": 0,\n   \"sc_les_sm_suspension_pair\": 0,\n   \"sc_les_sm_suspension_twine\": 0,\n   \"sc_les_sm_chair_machine\": 0,\n   \"sc_les_sm_wax_bound\": 0,\n   \"sc_les_sm_mutual_rope\": 0,\n   \"sc_les_sm_backtoback\": 0,\n   \"sc_les_sm_pet_leash\": 0,\n   \"sc_les_sm_collar_hold\": 0,\n   \"sc_les_sm_enema_bound\": 0,\n   \"sc_les_sm_clamp_pull\": 0,\n   \"sc_les_sm_anal_beads\": 0,\n   \"sc_les_sm_wooden_horse\": 0,\n   \"sc_les_sm_chastity_key\": 0,\n   \"sc_les_sm_clamp_weight\": 0,\n   \"sc_pose_skirt_lift_disdain\": 0,\n   \"sc_pose_sole_stomp_disdain\": 0,\n   \"sc_sock_office_elevator\": 0,\n   \"sc_sock_class_desk\": 0,\n   \"sc_sock_cafe_crossed\": 0,\n   \"sc_sock_home_sofa\": 0,\n   \"sc_sock_change_legup\": 0,\n   \"sc_sock_library_tiptoe\": 0,\n   \"sc_sock_stair_torn\": 0,\n   \"sc_sock_rain_wet\": 0,\n   \"sc_sock_hallway_nopanty\": 0,\n   \"sc_sock_shibari_room\": 0,\n   \"sc_pose_wind_hold_skirt\": 0,\n   \"sc_pose_seiza_rear_low\": 0,\n   \"sc_duo_hand_in_hand\": 0,\n   \"sc_duo_back_hug\": 0,\n   \"sc_duo_selfie\": 0,\n   \"sc_duo_lap_pillow\": 0,\n   \"sc_duo_feeding\": 0,\n   \"sc_duo_hair_braid\": 0,\n   \"sc_sakura_street_lookback\": 0,\n   \"sc_wedding_bouquet_wait\": 0,\n   \"sc_msb_suspension_dildo\": 0,\n   \"sc_art_hourglass\": 0,\n   \"sc_art_birdcage\": 0,\n   \"sc_art_flower_sleep\": 0,\n   \"sc_art_type_wall\": 0,\n   \"sc_art_vinyl_arch\": 0,\n   \"sc_art_paper_lantern\": 0,\n   \"sc_art_piano_stairs\": 0,\n   \"sc_art_clock_hand\": 0,\n   \"sc_art_umbrella_sky\": 0,\n   \"sc_art_specimen_case\": 0,\n   \"sc_art_zipper_wall\": 0,\n   \"sc_art_envelope\": 0,\n   \"sc_art_filmstrip_ring\": 0,\n   \"sc_art_aquarium\": 0,\n   \"sc_art_mirror_corridor\": 0,\n   \"sc_art_gear_wheel\": 0,\n   \"sc_art_rose_window\": 0,\n   \"sc_art_impossible_stairs\": 0,\n   \"sc_art_dandelion\": 0,\n   \"sc_art_torn_paper\": 0,\n   \"sc_art_keyhole\": 0,\n   \"sc_art_mirror_frame\": 0,\n   \"sc_art_giant_book\": 0,\n   \"sc_art_black_hourglass\": 0,\n   \"sc_art_black_type_wall\": 0,\n   \"sc_art_black_gear_wheel\": 0,\n   \"sc_art_black_keyhole\": 0,\n   \"sc_art_navy_clock\": 0,\n   \"sc_art_navy_filmstrip\": 0,\n   \"sc_art_navy_aquarium\": 0,\n   \"sc_art_navy_mirror_corridor\": 0,\n   \"sc_art_crimson_zipper\": 0,\n   \"sc_art_crimson_birdcage\": 0,\n   \"sc_art_crimson_rose_window\": 0,\n   \"sc_art_crimson_envelope\": 0,\n   \"sc_art_emerald_dandelion\": 0,\n   \"sc_art_emerald_impossible_stairs\": 0,\n   \"sc_art_emerald_umbrella_sky\": 0,\n   \"sc_art_emerald_piano_stairs\": 0,\n   \"sc_art_gold_vinyl_arch\": 0,\n   \"sc_art_gold_specimen_case\": 0,\n   \"sc_art_gold_torn_paper\": 0,\n   \"sc_art_gold_mirror_frame\": 0,\n   \"sc_art_gold_worm_hourglass\": 0,\n   \"sc_art_crimson_dutch_typewall\": 0,\n   \"sc_art_navy_ots_clock\": 0,\n   \"sc_art_white_framed_mirror\": 0,\n   \"sc_art_emerald_fisheye_gear\": 0,\n   \"sc_art_black_persp_stairs\": 0,\n   \"sc_art_crimson_pano_zipper\": 0,\n   \"sc_art_navy_mirror_aquarium\": 0,\n   \"sc_art_black_ub_dutch_umbrella\": 0,\n   \"sc_art_gold_cowboy_worm_clock\": 0,\n   \"sc_art_crimson_profile_rosewin\": 0,\n   \"sc_art_black_ub_framed_keyhole\": 0,\n   \"sc_art_emerald_bokeh_dandelion\": 0,\n   \"sc_art_navy_cowboy_vignette_vinyl\": 0,\n   \"sc_art_white_ub_birdseye_book\": 0,\n   \"sc_art_emerald_cowboy_fisheye_cage\": 0,\n   \"sc_art_piano_giant\": 0,\n   \"sc_art_cello_giant\": 0,\n   \"sc_art_harp_giant\": 0,\n   \"sc_art_organ_giant\": 0,\n   \"sc_art_violin_giant\": 0,\n   \"sc_art_drums_giant\": 0,\n   \"sc_art_guitar_giant\": 0,\n   \"sc_art_flute_giant\": 0,\n   \"sc_art_erhu_giant\": 0,\n   \"sc_art_xylophone_giant\": 0,\n   \"sc_art_piano\": 0,\n   \"sc_art_violin\": 0,\n   \"sc_art_cello\": 0,\n   \"sc_art_harp\": 0,\n   \"sc_art_accordion\": 0,\n   \"sc_art_trumpet\": 0,\n   \"sc_art_guqin\": 0,\n   \"sc_art_drumkit\": 0,\n   \"sc_art_musicbox\": 0,\n   \"sc_art_shamisen\": 0,\n   \"sc_art_ub_gpiano_key\": 0,\n   \"sc_art_ub_accordion\": 0,\n   \"sc_art_ub_mallet\": 0,\n   \"sc_art_cu_strings\": 0,\n   \"sc_art_cu_bow\": 0,\n   \"sc_art_cu_flute\": 0,\n   \"sc_art_cu_bubbles\": 0,\n   \"sc_art_ub_teacup\": 0,\n   \"sc_art_ub_bookpage\": 0,\n   \"sc_art_ub_calligraphy\": 0,\n   \"sc_art_ub_umbrella\": 0,\n   \"sc_art_ub_candle\": 0,\n   \"sc_art_duo_hourglass\": 0,\n   \"sc_art_duo_clock\": 0,\n   \"sc_art_duo_filmstrip\": 0,\n   \"sc_art_duo_aquarium\": 0,\n   \"sc_art_duo_birdcage\": 0,\n   \"sc_art_duo_zipper\": 0,\n   \"sc_art_duo_rose_window\": 0,\n   \"sc_art_duo_dandelion\": 0,\n   \"sc_art_duo_stairs\": 0,\n   \"sc_art_duo_giant_book\": 0,\n   \"sc_art_duo_vinyl\": 0,\n   \"sc_art_duo_gear\": 0,\n   \"sc_pose_yoga_mountain\": 0,\n   \"sc_pose_yoga_tree\": 0,\n   \"sc_pose_yoga_warrior_one\": 0,\n   \"sc_pose_yoga_warrior_two\": 0,\n   \"sc_pose_yoga_warrior_three\": 0,\n   \"sc_pose_yoga_triangle\": 0,\n   \"sc_pose_yoga_side_angle\": 0,\n   \"sc_pose_yoga_half_moon\": 0,\n   \"sc_pose_yoga_eagle\": 0,\n   \"sc_pose_yoga_dancer\": 0,\n   \"sc_pose_yoga_downward_dog\": 0,\n   \"sc_pose_yoga_upward_dog\": 0,\n   \"sc_pose_yoga_cobra\": 0,\n   \"sc_pose_yoga_locust\": 0,\n   \"sc_pose_yoga_cat_cow\": 0,\n   \"sc_pose_yoga_child\": 0,\n   \"sc_pose_yoga_pigeon\": 0,\n   \"sc_pose_yoga_butterfly\": 0,\n   \"sc_pose_yoga_lotus\": 0,\n   \"sc_pose_yoga_hero\": 0,\n   \"sc_pose_yoga_bridge\": 0,\n   \"sc_pose_yoga_boat\": 0,\n   \"sc_pose_yoga_camel\": 0,\n   \"sc_pose_yoga_plow\": 0,\n   \"sc_pose_yoga_shoulderstand\": 0,\n   \"sc_pose_yoga_wide_fold\": 0,\n   \"sc_pose_yoga_standing_fold\": 0,\n   \"sc_pose_yoga_seated_fold\": 0,\n   \"sc_pose_yoga_side_bend\": 0,\n   \"sc_pose_yoga_twist\": 0,\n   \"sc_pose_yoga_plank\": 0,\n   \"sc_pose_yoga_side_plank\": 0,\n   \"sc_pose_stretch_neck\": 0,\n   \"sc_pose_stretch_lunge\": 0,\n   \"sc_pose_stretch_figure_four\": 0,\n   \"sc_pose_stretch_doorway\": 0,\n   \"sc_pose_stretch_calf_wall\": 0,\n   \"sc_pose_stretch_quad\": 0,\n   \"sc_pose_stretch_arms_up\": 0,\n   \"sc_pose_stretch_straddle\": 0,\n   \"sc_pose_seated_knees_up\": 0,\n   \"sc_pose_supine_legs_camera\": 0,\n   \"sc_church_pew\": 0,\n   \"sc_cave_pool\": 0,\n   \"sc_garden_arch\": 0,\n   \"sc_desert_dune\": 0,\n   \"sc_bar_counter\": 0,\n   \"sc_n2_morning_shirt_lift\": 0,\n   \"sc_n2_bridge_skirt_lift\": 0,\n   \"sc_n2_stair_dress_lift\": 0,\n   \"sc_n2_pool_bikini_pull\": 0,\n   \"sc_n2_fitting_undressing\": 0,\n   \"sc_n2_entrance_panty_pull\": 0,\n   \"sc_n2_rain_wet_clothes\": 0,\n   \"sc_n2_alley_open_jacket\": 0,\n   \"sc_n2_office_collar_pull\": 0,\n   \"sc_n2_hotel_yukata_loose\": 0,\n   \"sc_ccc_reverse_cowgirl\": 0,\n   \"sc_ccc_prone_bone\": 0,\n   \"sc_ccc_leg_lock\": 0,\n   \"sc_ccc_sumata\": 0,\n   \"sc_ccc_intercrural\": 0,\n   \"sc_ccc_upright_straddle\": 0,\n   \"sc_duo_library_read\": 0,\n   \"sc_duo_umbrella_rain\": 0,\n   \"sc_duo_balcony_night\": 0,\n   \"sc_duo_onsen_steam\": 0,\n   \"sc_duo_sofa_lean\": 0,\n   \"sc_duo_hair_dry\": 0,\n   \"sc_duo_bath_foam\": 0,\n   \"sc_wp_blade_iaijutsu_low\": 0,\n   \"sc_wp_blade_tachi_silhouette\": 0,\n   \"sc_wp_blade_greatsword_draw\": 0,\n   \"sc_wp_blade_nodachi_turn\": 0,\n   \"sc_wp_blade_rapier_dust\": 0,\n   \"sc_wp_blade_wakizashi_night\": 0,\n   \"sc_wp_gun_pistol_low\": 0,\n   \"sc_wp_gun_rifle_silhouette\": 0,\n   \"sc_wp_gun_revolver_draw\": 0,\n   \"sc_wp_gun_shotgun_turn\": 0,\n   \"sc_wp_gun_sniper_dust\": 0,\n   \"sc_wp_gun_smg_night\": 0,\n   \"sc_wp_bow_yumi_low\": 0,\n   \"sc_wp_bow_longbow_silhouette\": 0,\n   \"sc_wp_bow_full_draw\": 0,\n   \"sc_wp_bow_horsebow_turn\": 0,\n   \"sc_wp_bow_crossbow_dust\": 0,\n   \"sc_wp_bow_arrow_night\": 0,\n   \"sc_wp_pole_naginata_low\": 0,\n   \"sc_wp_pole_spear_silhouette\": 0,\n   \"sc_wp_pole_halberd_draw\": 0,\n   \"sc_wp_pole_scythe_turn\": 0,\n   \"sc_wp_pole_staff_dust\": 0,\n   \"sc_wp_pole_axe_night\": 0,\n   \"sc_wp_shield_kite_low\": 0,\n   \"sc_wp_shield_round_silhouette\": 0,\n   \"sc_wp_shield_tower_draw\": 0,\n   \"sc_wp_shield_buckler_turn\": 0,\n   \"sc_wp_shield_wall_dust\": 0,\n   \"sc_wp_shield_mirror_night\": 0,\n   \"sc_wp_magic_staff_low\": 0,\n   \"sc_wp_magic_glyph_silhouette\": 0,\n   \"sc_wp_magic_blade_draw\": 0,\n   \"sc_wp_magic_grimoire_turn\": 0,\n   \"sc_wp_magic_orb_dust\": 0,\n   \"sc_wp_magic_sigil_night\": 0,\n   \"sc_wp_dual_dualblade_low\": 0,\n   \"sc_wp_dual_dualgun_silhouette\": 0,\n   \"sc_wp_dual_dagger_draw\": 0,\n   \"sc_wp_dual_kunai_turn\": 0,\n   \"sc_wp_dual_chain_dust\": 0,\n   \"sc_wp_dual_shuriken_night\": 0,\n   \"sc_wp_sci_saber_low\": 0,\n   \"sc_wp_sci_plasma_silhouette\": 0,\n   \"sc_wp_sci_mecharm_draw\": 0,\n   \"sc_wp_sci_drone_turn\": 0,\n   \"sc_wp_sci_cannon_dust\": 0,\n   \"sc_wp_sci_cyberblade_night\": 0,\n   \"sc_wp_eva_longinus\": 0,\n   \"sc_wp_eva_progknife\": 0,\n   \"sc_wp_eva_atfield\": 0,\n   \"sc_wp_eva_replica\": 0,\n   \"sc_wp_gi_skyward\": 0,\n   \"sc_wp_gi_wolfgrave\": 0,\n   \"sc_wp_gi_jadespear\": 0,\n   \"sc_wp_gi_lostprayer\": 0,\n   \"sc_wp_fate_excalibur\": 0,\n   \"sc_wp_fate_ea\": 0,\n   \"sc_wp_fate_gaebolg\": 0,\n   \"sc_wp_fate_avalon\": 0,\n   \"sc_wp_kny_nichirin\": 0,\n   \"sc_wp_kny_flame\": 0,\n   \"sc_wp_kny_dualblade\": 0,\n   \"sc_wp_kny_insect\": 0,\n   \"sc_wp_nier_virtuous\": 0,\n   \"sc_wp_nier_bloodoath\": 0,\n   \"sc_wp_nier_pod\": 0,\n   \"sc_wp_nier_machinearm\": 0,\n   \"sc_wp_hsr_lightcone\": 0,\n   \"sc_wp_hsr_cloudspear\": 0,\n   \"sc_wp_hsr_destruction\": 0,\n   \"sc_wp_hsr_erudition\": 0,\n   \"sc_wp_ff_buster\": 0,\n   \"sc_wp_ff_masamune\": 0,\n   \"sc_wp_ff_gunblade\": 0,\n   \"sc_wp_ff_sagestaff\": 0,\n   \"sc_wp_cyber_mantis\": 0,\n   \"sc_wp_cyber_smartpistol\": 0,\n   \"sc_wp_cyber_monowire\": 0,\n   \"sc_wp_cyber_gorilla\": 0,\n   \"sc_night_shrine_torii\": 0,\n   \"sc_ccc_night_shrine\": 0,\n   \"sc_night_bath_steam\": 0,\n   \"sc_ccc_night_bath\": 0,\n   \"sc_night_classroom_moon\": 0,\n   \"sc_ccc_night_classroom\": 0,\n   \"sc_night_cafe_closed\": 0,\n   \"sc_ccc_night_cafe\": 0,\n   \"sc_night_library_lamp\": 0,\n   \"sc_ccc_night_library\": 0,\n   \"sc_exp_night_park\": 0,\n   \"sc_exp_night_alley\": 0,\n   \"sc_exp_night_bridge\": 0,\n   \"sc_exp_night_beach\": 0,\n   \"sc_exp_night_street\": 0,\n   \"sc_exp_night_rooftop\": 0,\n   \"sc_exp_night_park_self\": 0,\n   \"sc_exp_night_alley_self\": 0,\n   \"sc_n2_balcony_laundry_lift\": 0,\n   \"sc_n2_bath_wet_nightgown\": 0,\n   \"sc_n2_kitchen_strap_slip\": 0,\n   \"sc_n2_library_stack_hem\": 0,\n   \"sc_n2_train_seat_dress_lift\": 0,\n   \"sc_n2_park_bench_change\": 0,\n   \"sc_n2_beach_sarong_slip\": 0,\n   \"sc_n2_shrine_obi_loose\": 0,\n   \"sc_n2_hallway_cardigan_open\": 0,\n   \"sc_n2_onsen_robe_slip\": 0,\n   \"sc_n2_cinema_collar_pull\": 0,\n   \"sc_n2_forest_picnic_hem\": 0,\n   \"sc_season_spring_river_walk\": 0,\n   \"sc_season_spring_park_picnic\": 0,\n   \"sc_season_spring_crosswalk\": 0,\n   \"sc_season_spring_balcony_tea\": 0,\n   \"sc_season_summer_sunflower\": 0,\n   \"sc_season_summer_bus_stop\": 0,\n   \"sc_season_summer_rooftop_shade\": 0,\n   \"sc_season_summer_cafe_iced\": 0,\n   \"sc_season_autumn_street_leaves\": 0,\n   \"sc_season_autumn_shrine_maple\": 0,\n   \"sc_season_autumn_garden_bench\": 0,\n   \"sc_season_autumn_mountain_path\": 0,\n   \"sc_season_winter_park_snow\": 0,\n   \"sc_season_winter_river_bank\": 0,\n   \"sc_season_winter_cafe_window\": 0,\n   \"sc_season_winter_apartment_sill\": 0,\n   \"sc_ccc_elevator_pin\": 0,\n   \"sc_msb_stairwell_leash\": 0,\n   \"sc_ccc_kitchen_counter\": 0,\n   \"sc_msb_kitchen_toys\": 0,\n   \"sc_ccc_changing_stall\": 0,\n   \"sc_msb_fitting_mess\": 0,\n   \"sc_ccc_poolside_night\": 0,\n   \"sc_msb_onsen_steam\": 0,\n   \"sc_ccc_park_night_bench\": 0,\n   \"sc_msb_park_night_ground\": 0,\n   \"sc_k2_still_section\": 0,\n   \"sc_k2_caustic_requiem\": 0,\n   \"sc_k2_after_field\": 0,\n   \"sc_k2_pressing_circle\": 0,\n   \"sc_k2_dune\": 0,\n   \"sc_k2_river_boat\": 0,\n   \"sc_k2_cloister\": 0,\n   \"sc_k2_paper_festival\": 0,\n   \"sc_k2_eave\": 0,\n   \"sc_k2_wiping_edge\": 0,\n   \"sc_k2_coast_balcony\": 0,\n   \"sc_k2_coast_lookout\": 0,\n   \"sc_k2_coast_pier\": 0,\n   \"sc_k2_coast_pool_edge\": 0,\n   \"sc_k2_coast_shower\": 0,\n   \"sc_k2_coast_surf\": 0,\n   \"sc_k2_coast_tide_pool\": 0,\n   \"sc_k2_corridor\": 0,\n   \"sc_k2_dry_garden\": 0,\n   \"sc_k2_first_snow\": 0,\n   \"sc_k2_forest_path\": 0,\n   \"sc_k2_ginkgo_walk\": 0,\n   \"sc_k2_glass_house\": 0,\n   \"sc_k2_hanabi_after\": 0,\n   \"sc_k2_hanabi_apple\": 0,\n   \"sc_k2_hanabi_bank\": 0,\n   \"sc_k2_hanabi_fan\": 0,\n   \"sc_k2_hanabi_goldfish\": 0,\n   \"sc_k2_hanabi_mask\": 0,\n   \"sc_k2_hanabi_pov\": 0,\n   \"sc_k2_cliff_edge\": 0,\n   \"sc_k2_kerb\": 0,\n   \"sc_k2_kiln_song\": 0,\n   \"sc_k2_kiosk\": 0,\n   \"sc_k2_lantern_tide\": 0,\n   \"sc_k2_home_bath\": 0,\n   \"sc_k2_home_closet\": 0,\n   \"sc_k2_home_dinner\": 0,\n   \"sc_k2_home_entry\": 0,\n   \"sc_k2_home_laundry_line\": 0,\n   \"sc_k2_home_linen\": 0,\n   \"sc_k2_home_plants\": 0,\n   \"sc_k2_home_stove\": 0,\n   \"sc_k2_idle_works\": 0,\n   \"sc_k2_indigo_drift\": 0,\n   \"sc_k2_indus_belltower\": 0,\n   \"sc_k2_indus_blast\": 0,\n   \"sc_k2_indus_dock\": 0,\n   \"sc_k2_indus_nave\": 0,\n   \"sc_k2_indus_pump\": 0,\n   \"sc_k2_back_alley\": 0,\n   \"sc_k2_bakery\": 0,\n   \"sc_k2_barber\": 0,\n   \"sc_k2_blue_hour\": 0,\n   \"sc_k2_bus_stop\": 0,\n   \"sc_k2_cavern\": 0,\n   \"sc_k2_hanabi_steps\": 0,\n   \"sc_k2_hanabi_yatai\": 0,\n   \"sc_k2_high_noon\": 0,\n   \"sc_k2_indus_reservoir\": 0,\n   \"sc_k2_indus_tower\": 0,\n   \"sc_k2_last_train\": 0,\n   \"sc_k2_lift_shaft\": 0,\n   \"sc_k2_moon_court\": 0,\n   \"sc_k2_moon_gate\": 0,\n   \"sc_k2_neon_strip\": 0,\n   \"sc_k2_night_folio\": 0,\n   \"sc_k2_north_light\": 0,\n   \"sc_k2_parkade\": 0,\n   \"sc_k2_petal_line\": 0,\n   \"sc_k2_phone_box\": 0,\n   \"sc_k2_pier_end\": 0,\n   \"sc_k2_rain_mart\": 0,\n   \"sc_k2_rain_platform\": 0,\n   \"sc_k2_river_bend\": 0,\n   \"sc_k2_roof_tank\": 0,\n   \"sc_k2_school_class\": 0,\n   \"sc_k2_school_court\": 0,\n   \"sc_k2_school_gym\": 0,\n   \"sc_k2_school_lab\": 0,\n   \"sc_k2_school_lockers\": 0,\n   \"sc_k2_school_music\": 0,\n   \"sc_k2_school_pool\": 0,\n   \"sc_k2_school_stairs\": 0,\n   \"sc_k2_skywalk\": 0,\n   \"sc_k2_solitary_tree\": 0,\n   \"sc_k2_stack_room\": 0,\n   \"sc_k2_still_lake\": 0,\n   \"sc_k2_tidal_flat\": 0,\n   \"sc_k2_underpass\": 0,\n   \"sc_k2_spin_cycle\": 0,\n   \"sc_k2_summit_night\": 0,\n   \"sc_k2_thread_bindery\": 0,\n   \"sc_k2_wheat_field\": 0,\n   \"sc_k2_window_seat\": 0,\n   \"sc_art_k2_veil_fall_a\": 0,\n   \"sc_art_k2_veil_fall_b\": 0,\n   \"sc_art_k2_meridian_cut\": 0,\n   \"sc_art_k2_triple_register_a\": 0,\n   \"sc_art_k2_triple_register_b\": 0,\n   \"sc_art_k2_root_register\": 0,\n   \"sc_art_k2_pod_separation\": 0,\n   \"sc_art_k2_vein_projection\": 0,\n   \"sc_art_k2_calyx_corridor\": 0,\n   \"sc_art_k2_pollen_storm\": 0,\n   \"sc_art_k2_second_specimen\": 0,\n   \"sc_art_k2_closing_register\": 0,\n   \"sc_art_k2_star_chart_roll\": 0,\n   \"sc_art_k2_celestial_corolla\": 0,\n   \"sc_art_k2_zero_day_garden\": 0,\n   \"sc_art_k2_gravity_theater\": 0,\n   \"sc_art_k2_zero_gravity_field\": 0,\n   \"sc_art_k2_prism_tide\": 0,\n   \"sc_art_k2_helix_choir\": 0,\n   \"sc_art_k2_dendrite_survey\": 0,\n   \"sc_art_k2_crystal_rain\": 0,\n   \"sc_art_k2_phonon_tunnel_a\": 0,\n   \"sc_art_k2_phonon_tunnel_b\": 0,\n   \"sc_art_k2_magnetic_field\": 0,\n   \"sc_art_k2_mirror_plume\": 0,\n   \"sc_art_k2_orbital_celesta\": 0,\n   \"sc_art_k2_echo_codex\": 0,\n   \"sc_art_k2_mirror_tide_opera\": 0,\n   \"sc_art_k2_grain_sanctum\": 0,\n   \"sc_art_k2_blackbody\": 0,\n   \"sc_art_k2_organon\": 0,\n   \"sc_art_k2_fog_chronometer\": 0,\n   \"sc_art_k2_salt_tide_archive\": 0,\n   \"sc_art_k2_ring_bind\": 0,\n   \"sc_art_k2_ring_break\": 0,\n   \"sc_art_k2_ring_cage\": 0,\n   \"sc_art_k2_ring_cast\": 0,\n   \"sc_art_k2_ring_hall\": 0,\n   \"sc_art_k2_ring_forest\": 0,\n   \"sc_art_k2_ring_gate\": 0,\n   \"sc_art_k2_ring_rift\": 0,\n   \"sc_art_k2_ring_snow\": 0,\n   \"sc_art_k2_ring_stage\": 0,\n   \"sc_art_k2_ring_well\": 0,\n   \"sc_art_k2_spell_void\": 0,\n   \"sc_art_k2_market_ring\": 0,\n   \"sc_k2_pose_chain_reach\": 0,\n   \"sc_k2_pose_floating_step\": 0,\n   \"sc_k2_pose_gate_turn\": 0,\n   \"sc_k2_pose_mirror_ledge\": 0,\n   \"sc_k2_pose_oculus\": 0,\n   \"sc_k2_pose_porcelain\": 0,\n   \"sc_k2_pose_stone_seat\": 0,\n   \"sc_k2_pose_veil_column\": 0,\n   \"sc_wp_k2_axe_foundry\": 0,\n   \"sc_wp_k2_bow_drawn\": 0,\n   \"sc_wp_k2_bow_monolith\": 0,\n   \"sc_wp_k2_broken_blade\": 0,\n   \"sc_wp_k2_chain_flail\": 0,\n   \"sc_wp_k2_dropped_blade\": 0,\n   \"sc_wp_k2_greatsword_field\": 0,\n   \"sc_wp_k2_halberd_tower\": 0,\n   \"sc_wp_k2_half_sheathed\": 0,\n   \"sc_wp_k2_kneel_blade\": 0,\n   \"sc_wp_k2_reverse_grip\": 0,\n   \"sc_wp_k2_scythe_gate\": 0,\n   \"sc_wp_k2_shield_wall\": 0,\n   \"sc_wp_k2_shoulder_guard\": 0,\n   \"sc_wp_k2_spear_point\": 0,\n   \"sc_wp_k2_spear_clouds\": 0,\n   \"sc_wp_k2_sheathing\": 0,\n   \"sc_wp_k2_steel_wiped\": 0,\n   \"sc_wp_k2_stuck_ground\": 0,\n   \"sc_wp_k2_tip_down\": 0,\n   \"sc_sink_legs_up\": 0\n  },\n  \"count\": {\n   \"1girl, solo\": 3\n  },\n  \"makeup\": {\n   \"glossy lips\": 0,\n   \"blush\": 0,\n   \"eyeliner\": 0,\n   \"eyeshadow\": 0,\n   \"mole under eye\": 0,\n   \"red lipstick\": 0,\n   \"black lipstick\": 0,\n   \"nail polish\": 0,\n   \"red nail polish\": 0,\n   \"eyebags, blush, eyeliner, glossy lips\": 0,\n   \"blush, half-closed eyes, eyeliner\": 0,\n   \"mole under eye, blush, glossy lips\": 0,\n   \"pale skin, black lipstick, eyeshadow\": 0\n  },\n  \"nails\": {\n   \"nail polish\": 0,\n   \"red nail polish\": 0\n  },\n  \"skin_detail\": {\n   \"glistening skin\": 0,\n   \"mole under eye\": 0\n  },\n  \"hair_fx\": {\n   \"wet hair\": 0,\n   \"wet hair, hair over eyes\": 0,\n   \"glossy hair\": 0\n  },\n  \"leg\": {\n   \"long legs\": 0\n  },\n  \"figure\": {\n   \"voluptuous\": 0\n  },\n  \"skin\": {\n   \"tanlines\": 0,\n   \"pale skin\": 0\n  },\n  \"emotion\": {\n   \"embarrassed, blush\": 0\n  },\n  \"mouth\": {\n   \"parted lips\": 0\n  }\n },\n \"_ui\": {\n  \"tab\": \"near\",\n  \"openSecs\": [\n   \"count\",\n   \"hair\",\n   \"face\"\n  ],\n  \"sceneOpen\": {},\n  \"sceneGroup\": \"all\",\n  \"scenePick\": {\n   \"pose\": [],\n   \"weapon\": [],\n   \"near\": [],\n   \"art\": []\n  },\n  \"poseCat\": \"all\",\n  \"weaponWork\": \"all\",\n  \"weaponCat\": \"all\",\n  \"outfitCat\": \"\",\n  \"outfitCatOpen\": false,\n  \"dryDetailOpen\": true,\n  \"outfitQuery\": \"\",\n  \"outfitOpen\": {},\n  \"sceneBg\": \"\",\n  \"sceneQuery\": \"\",\n  \"sceneAspect\": \"all\",\n  \"frameRatio\": \"9:16\",\n  \"frameMemo\": {\n   \"p\": \"9:16\",\n   \"s\": \"1:1\",\n   \"l\": \"16:9\"\n  },\n  \"sceneTheme\": \"\",\n  \"sceneThemeAll\": false,\n  \"sceneThemeOpen\": true,\n  \"nearPartOpen\": true,\n  \"sceneFavOnly\": false,\n  \"sceneFavOpen\": false,\n  \"sceneTipOpen\": false,\n  \"sceneCompact\": false,\n  \"sceneThumb\": true,\n  \"outfitThumb\": true,\n  \"sceneClosed\": {},\n  \"nearPart\": \"\",\n  \"charWork\": \"zenless_zone_zero\",\n  \"charQuery\": \"\",\n  \"charTraits\": [],\n  \"charTraitOpen\": false,\n  \"sceneLimit\": 120,\n  \"scroll\": {\n   \"left\": 0.06860200337172605,\n   \"right\": 0.626959228515625\n  }\n }\n}",
+        "extra_body": "",
+        "appearance_follow": true,
+        "selected_roles": "remielle_dan",
+        "big_breasts": false,
+        "role_works": "",
+        "breast_size": "不指定",
+        "outfit_style": "随机",
+        "role_fav_only": false,
+        "hair_follow": true,
+        "hair_len_pick": "角色标签发型",
+        "hair_tie_pick": "角色标签发型",
+        "hair_curl_pick": "角色标签发型",
+        "hair_acc_pick": "角色标签发型",
+        "role_pick": true,
+        "scene_pick": false,
+        "dry_skin_filter": false,
+        "dry_skin_groups": "",
+        "dry_skin_tags": "",
+        "duo_role_fill": true,
+        "pick_pool_mode": "",
+        "pick_pool_ids": ""
+      }
+    },
+    {
+      "id": 7,
+      "type": "Prompt (LoraManager)",
+      "pos": [
+        560.2598178976791,
+        1281.2984448209086
+      ],
+      "size": [
+        360,
+        200
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 2
+        },
+        {
+          "name": "seed",
+          "shape": 7,
+          "type": "INT",
+          "link": null
+        },
+        {
+          "name": "trigger_words1",
+          "shape": 7,
+          "type": "STRING",
+          "link": 4
+        },
+        {
+          "name": "text",
+          "type": "AUTOCOMPLETE_TEXT_PROMPT,STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 1
+        },
+        {
+          "name": "trigger_words2",
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            9,
+            19
+          ]
+        },
+        {
+          "name": "PROMPT",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "正向提示词 · 自动前置触发词",
+      "properties": {
+        "aux_id": "willmiao/ComfyUI-Lora-Manager",
+        "ver": "3424779991619274993cfef2ac26990b66e0e424",
+        "Node name for S&R": "Prompt (LoraManager)",
+        "__lm_widget_ids": [
+          "__lm_autocomplete_meta_text",
+          "text"
+        ]
+      },
+      "widgets_values": [
+        {
+          "version": 1,
+          "textWidgetName": "text"
+        },
+        ""
+      ],
+      "widgets_values_named": {
+        "__lm_autocomplete_meta_text": {
+          "version": 1,
+          "textWidgetName": "text"
+        },
+        "text": ""
+      }
+    },
+    {
+      "id": 8,
+      "type": "CLIPTextEncode",
+      "pos": [
+        534.9828625342747,
+        1560.677530001541
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            10,
+            20
+          ]
+        }
+      ],
+      "title": "负向词 · 艺术构图 + 压油光",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.1",
+        "Node name for S&R": "CLIPTextEncode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "worst quality, low quality, score_1, score_2, score_3, lowres, jpeg artifacts, blurry, bad anatomy, extra limbs, deformed hands, extra digits, close-up, portrait, text, watermark, signature, glossy skin, shiny skin, oily skin, glistening, wet look, sweaty skin, glossy lips, wet hair, heavy makeup, oil painting style"
+      ],
+      "widgets_values_named": {
+        "text": "worst quality, low quality, score_1, score_2, score_3, lowres, jpeg artifacts, blurry, bad anatomy, extra limbs, deformed hands, extra digits, close-up, portrait, text, watermark, signature, glossy skin, shiny skin, oily skin, glistening, wet look, sweaty skin, glossy lips, wet hair, heavy makeup, oil painting style"
+      }
+    },
+    {
+      "id": 1,
+      "type": "UNETLoader",
+      "pos": [
+        -89.79729138031311,
+        53.2185724261042
+      ],
+      "size": [
+        346.9711179387916,
+        106.2701723230424
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            5
+          ]
+        }
+      ],
+      "title": "UNet · anima29B_v10_bf16",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.1",
+        "Node name for S&R": "UNETLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "Anima\\anima29B_v10_bf16.safetensors",
+        "default"
+      ],
+      "widgets_values_named": {
+        "unet_name": "Anima\\anima29B_v10_bf16.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    {
+      "id": 2,
+      "type": "CLIPLoader",
+      "pos": [
+        -93.32656649893718,
+        268.72368291374033
+      ],
+      "size": [
+        356.46174301600286,
+        122.24426759747712
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            6
+          ]
+        }
+      ],
+      "title": "CLIP · qwen_3_06b_base",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.1",
+        "Node name for S&R": "CLIPLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "Anima\\qwen_3_06b_base.safetensors",
+        "stable_diffusion",
+        "default"
+      ],
+      "widgets_values_named": {
+        "clip_name": "Anima\\qwen_3_06b_base.safetensors",
+        "type": "stable_diffusion",
+        "device": "default"
+      }
+    },
+    {
+      "id": 3,
+      "type": "VAELoader",
+      "pos": [
+        -93.34382445142306,
+        499.86620385364995
+      ],
+      "size": [
+        351.8447531781078,
+        82.95448255797578
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            13,
+            17,
+            22
+          ]
+        }
+      ],
+      "title": "VAE · qwen_image_vae",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.1",
+        "Node name for S&R": "VAELoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "qwen_image_vae.safetensors"
+      ],
+      "widgets_values_named": {
+        "vae_name": "qwen_image_vae.safetensors"
+      }
+    },
+    {
+      "id": 19,
+      "type": "Lora Loader (LoraManager)",
+      "pos": [
+        -87.81222633649577,
+        660.4889481466346
+      ],
+      "size": [
+        390,
+        320
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 5
+        },
+        {
+          "name": "clip",
+          "shape": 7,
+          "type": "CLIP",
+          "link": 6
+        },
+        {
+          "name": "lora_stack",
+          "shape": 7,
+          "type": "LORA_STACK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            7,
+            8
+          ]
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            2,
+            3
+          ]
+        },
+        {
+          "name": "trigger_words",
+          "type": "STRING",
+          "links": [
+            4
+          ]
+        },
+        {
+          "name": "loaded_loras",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "LoRA 管理 · LoraManager（带触发词）",
+      "properties": {
+        "aux_id": "willmiao/ComfyUI-Lora-Manager",
+        "ver": "3424779991619274993cfef2ac26990b66e0e424",
+        "Node name for S&R": "Lora Loader (LoraManager)",
+        "__lm_widget_ids": [
+          "__lm_autocomplete_meta_text",
+          "text",
+          "loras"
+        ]
+      },
+      "widgets_values": [
+        {
+          "version": 1,
+          "textWidgetName": "text"
+        },
+        "<lora:anima-turbo-lora-v0.2:0.85> <lora:anima-base-1-light-concepts-v31:0.30:0.30>",
+        [
+          {
+            "name": "anima-turbo-lora-v0.2",
+            "strength": 0.85,
+            "active": true,
+            "expanded": false,
+            "clipStrength": 0.85,
+            "selected": false,
+            "locked": false
+          },
+          {
+            "name": "anima-base-1-light-concepts-v31",
+            "strength": 0.3,
+            "active": true,
+            "expanded": false,
+            "clipStrength": 0.3,
+            "selected": false,
+            "locked": false
+          }
+        ]
+      ],
+      "widgets_values_named": {
+        "__lm_autocomplete_meta_text": {
+          "version": 1,
+          "textWidgetName": "text"
+        },
+        "text": "<lora:anima-turbo-lora-v0.2:0.85> <lora:anima-base-1-light-concepts-v31:0.30:0.30>",
+        "loras": [
+          {
+            "name": "anima-turbo-lora-v0.2",
+            "strength": 0.85,
+            "active": true,
+            "expanded": false,
+            "clipStrength": 0.85,
+            "selected": false,
+            "locked": false
+          },
+          {
+            "name": "anima-base-1-light-concepts-v31",
+            "strength": 0.3,
+            "active": true,
+            "expanded": false,
+            "clipStrength": 0.3,
+            "selected": false,
+            "locked": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "type": "EmptyLatentImage",
+      "pos": [
+        1046.8692553310243,
+        179.59166048856596
+      ],
+      "size": [
+        270,
+        106
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 26
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 27
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            11
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.1",
+        "Node name for S&R": "EmptyLatentImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        720,
+        1280,
+        1
+      ],
+      "widgets_values_named": {
+        "width": 720,
+        "height": 1280,
+        "batch_size": 1
+      }
+    },
+    {
+      "id": 11,
+      "type": "KSampler",
+      "pos": [
+        1547.1558083770112,
+        24.283175686934896
+      ],
+      "size": [
+        403.9888671875,
+        590
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 7
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 9
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 10
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 11
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            12
+          ]
+        }
+      ],
+      "title": "主采样 · 16 步 / CFG 2.0 / er_sde / beta（官方参数照搬）",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        265521198872240,
+        "fixed",
+        16,
+        2,
+        "er_sde",
+        "beta",
+        1
+      ],
+      "widgets_values_named": {
+        "seed": 265521198872240,
+        "control_after_generate": "fixed",
+        "steps": 16,
+        "cfg": 2,
+        "sampler_name": "er_sde",
+        "scheduler": "beta",
+        "denoise": 1
+      },
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 12,
+      "type": "VAEDecodeTiled",
+      "pos": [
+        2101.7323964330226,
+        42.354370595691535
+      ],
+      "size": [
+        340,
+        220
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 12
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 13
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            14,
+            15
+          ]
+        }
+      ],
+      "title": "主图分块解码 · 320/32",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "VAEDecodeTiled"
+      },
+      "widgets_values": [
+        320,
+        32,
+        64,
+        8
+      ],
+      "widgets_values_named": {
+        "tile_size": 320,
+        "overlap": 32,
+        "temporal_size": 64,
+        "temporal_overlap": 8
+      }
+    },
+    {
+      "id": 14,
+      "type": "ImageScaleBy",
+      "pos": [
+        2095.149659503646,
+        337.3636145779488
+      ],
+      "size": [
+        336.7301591742747,
+        101.27499669455494
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 14
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            16
+          ]
+        }
+      ],
+      "title": "像素放大 x1.5 · lanczos",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "ImageScaleBy"
+      },
+      "widgets_values": [
+        "lanczos",
+        1.5
+      ],
+      "widgets_values_named": {
+        "upscale_method": "lanczos",
+        "scale_by": 1.5
+      }
+    },
+    {
+      "id": 15,
+      "type": "VAEEncodeTiled",
+      "pos": [
+        2114.706741116783,
+        509.3441049293694
+      ],
+      "size": [
+        351.68738789485155,
+        183.86738429459643
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pixels",
+          "type": "IMAGE",
+          "link": 16
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 17
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            18
+          ]
+        }
+      ],
+      "title": "VAE编码（分块）",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "VAEEncodeTiled"
+      },
+      "widgets_values": [
+        512,
+        64,
+        4096,
+        8
+      ],
+      "widgets_values_named": {
+        "tile_size": 512,
+        "overlap": 64,
+        "temporal_size": 4096,
+        "temporal_overlap": 8
+      }
+    },
+    {
+      "id": 16,
+      "type": "KSampler",
+      "pos": [
+        1639.9409434378108,
+        1243.7091534247165
+      ],
+      "size": [
+        360.464453125,
+        590
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 8
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 19
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 20
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 18
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            21
+          ]
+        }
+      ],
+      "title": "二采 · 6 步 / denoise 0.20（像素域，官方种子+1）",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        265521198872241,
+        "fixed",
+        6,
+        2,
+        "er_sde",
+        "beta",
+        0.2
+      ],
+      "widgets_values_named": {
+        "seed": 265521198872241,
+        "control_after_generate": "fixed",
+        "steps": 6,
+        "cfg": 2,
+        "sampler_name": "er_sde",
+        "scheduler": "beta",
+        "denoise": 0.2
+      },
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 17,
+      "type": "VAEDecodeTiled",
+      "pos": [
+        2165.6518321892086,
+        1256.997368846123
+      ],
+      "size": [
+        340,
+        220
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 21
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 22
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            23
+          ]
+        }
+      ],
+      "title": "二采分块解码 · 320/32",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "VAEDecodeTiled"
+      },
+      "widgets_values": [
+        320,
+        32,
+        64,
+        8
+      ],
+      "widgets_values_named": {
+        "tile_size": 320,
+        "overlap": 32,
+        "temporal_size": 64,
+        "temporal_overlap": 8
+      }
+    },
+    {
+      "id": 18,
+      "type": "LazySwitchKJ",
+      "pos": [
+        2337.9790091815157,
+        994.248212318594
+      ],
+      "size": [
+        270,
+        110
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "on_false",
+          "type": "*",
+          "link": 15
+        },
+        {
+          "name": "on_true",
+          "type": "*",
+          "link": 23
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "type": "*",
+          "links": [
+            24,
+            25
+          ]
+        }
+      ],
+      "title": "二采开关（关=只出首采原图）",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "70701d2a11d4797cf52733290ed0b6b5037148d9",
+        "Node name for S&R": "LazySwitchKJ"
+      },
+      "widgets_values": [
+        true
+      ],
+      "widgets_values_named": {
+        "switch": true
+      }
+    },
+    {
+      "id": 13,
+      "type": "SaveImage",
+      "pos": [
+        3245.8729884112377,
+        1202.2168944477858
+      ],
+      "size": [
+        386.948927749885,
+        96.06523158803213
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 24
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "保存图像",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.1",
+        "Node name for S&R": "SaveImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "图片/艺术构图_哑光/构图_"
+      ],
+      "widgets_values_named": {
+        "filename_prefix": "图片/艺术构图_哑光/构图_"
+      }
+    },
+    {
+      "id": 30,
+      "type": "PreviewImage",
+      "pos": [
+        2742.0558927062343,
+        1201.8797700390587
+      ],
+      "size": [
+        448.26447943417065,
+        660.7680307691281
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 25
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 31,
+      "type": "孤海_kontext生图比例",
+      "pos": [
+        1028.7069342030559,
+        -40.210466184643934
+      ],
+      "size": [
+        270,
+        126
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "宽度",
+          "type": "INT",
+          "links": [
+            26
+          ]
+        },
+        {
+          "name": "高度",
+          "type": "INT",
+          "links": [
+            27
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "goohai/Goohaitools-comfyui",
+        "ver": "ba61d632098cd32f94eeed7e9e4f6918c02b49be",
+        "Node name for S&R": "孤海_kontext生图比例"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        "1：1（1024x1024）"
+      ],
+      "widgets_values_named": {
+        "宽度": 1024,
+        "高度": 1024,
+        "选择尺寸": "1：1（1024x1024）"
+      }
+    }
+  ],
+  "links": [
+    [
+      1,
+      6,
+      0,
+      7,
+      3,
+      "STRING"
+    ],
+    [
+      2,
+      19,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      3,
+      19,
+      1,
+      8,
+      0,
+      "CLIP"
+    ],
+    [
+      4,
+      19,
+      2,
+      7,
+      2,
+      "STRING"
+    ],
+    [
+      5,
+      1,
+      0,
+      19,
+      0,
+      "MODEL"
+    ],
+    [
+      6,
+      2,
+      0,
+      19,
+      1,
+      "CLIP"
+    ],
+    [
+      7,
+      19,
+      0,
+      11,
+      0,
+      "MODEL"
+    ],
+    [
+      8,
+      19,
+      0,
+      16,
+      0,
+      "MODEL"
+    ],
+    [
+      9,
+      7,
+      0,
+      11,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      10,
+      8,
+      0,
+      11,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      11,
+      10,
+      0,
+      11,
+      3,
+      "LATENT"
+    ],
+    [
+      12,
+      11,
+      0,
+      12,
+      0,
+      "LATENT"
+    ],
+    [
+      13,
+      3,
+      0,
+      12,
+      1,
+      "VAE"
+    ],
+    [
+      14,
+      12,
+      0,
+      14,
+      0,
+      "IMAGE"
+    ],
+    [
+      16,
+      14,
+      0,
+      15,
+      0,
+      "IMAGE"
+    ],
+    [
+      17,
+      3,
+      0,
+      15,
+      1,
+      "VAE"
+    ],
+    [
+      18,
+      15,
+      0,
+      16,
+      3,
+      "LATENT"
+    ],
+    [
+      19,
+      7,
+      0,
+      16,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      20,
+      8,
+      0,
+      16,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      21,
+      16,
+      0,
+      17,
+      0,
+      "LATENT"
+    ],
+    [
+      22,
+      3,
+      0,
+      17,
+      1,
+      "VAE"
+    ],
+    [
+      24,
+      18,
+      0,
+      13,
+      0,
+      "*"
+    ],
+    [
+      15,
+      12,
+      0,
+      18,
+      0,
+      "IMAGE"
+    ],
+    [
+      23,
+      17,
+      0,
+      18,
+      1,
+      "IMAGE"
+    ],
+    [
+      25,
+      18,
+      0,
+      30,
+      0,
+      "IMAGE"
+    ],
+    [
+      26,
+      31,
+      0,
+      10,
+      0,
+      "INT"
+    ],
+    [
+      27,
+      31,
+      1,
+      10,
+      1,
+      "INT"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "① Anima 出题与 LoraManager 正向",
+      "bounding": [
+        -126.61331420087713,
+        1133.2816695264312,
+        1560,
+        1120
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "② 模型与 LoRA 配方（LoraManager）",
+      "bounding": [
+        -128,
+        -60,
+        1020,
+        1160
+      ],
+      "color": "#8A8A8A",
+      "flags": {}
+    },
+    {
+      "id": 4,
+      "title": "④ 主采样与解码",
+      "bounding": [
+        1440,
+        -60,
+        1247.196102865646,
+        970.2297301038861
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 5,
+      "title": "⑤ 二采 · LazySwitch（默认开）",
+      "bounding": [
+        1517.6978599375343,
+        1133.506010165626,
+        1075.2279345960937,
+        721.1713079661208
+      ],
+      "color": "#A1309C",
+      "flags": {}
+    },
+    {
+      "id": 7,
+      "title": "图像预览",
+      "bounding": [
+        2732.0558927062343,
+        1131.8797700390587,
+        910.7660234548885,
+        740.768030769128
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "frontendVersion": "1.57.1",
+    "ds": {
+      "scale": 1.1613669242022724,
+      "offset": [
+        -1920.9641126183624,
+        -882.4098773472424
+      ]
+    }
+  },
+  "extensions": {
+    "seed_widgets": {
+      "6": 1,
+      "11": 0,
+      "16": 0
+    }
+  },
+  "version": 0.4,
+  "seed_widgets": {
+    "6": 1,
+    "11": 0,
+    "16": 0
+  }
+}
